@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
-    <div className="flex bg-red-200 mx-[15%] justify-between py-8">
+    <div className="flex mx-[15%] justify-between py-8">
       {/* Logo */}
       <div className="font-oswald text-3xl">CEDRICQ</div>
       {/* Links */}
