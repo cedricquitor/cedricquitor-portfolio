@@ -1,15 +1,21 @@
+import Link from "next/link";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Navbar = () => {
   return (
-    <div className="flex bg-red-200 mx-[15%] justify-between">
+    <div className="flex bg-red-200 mx-[15%] justify-between py-8">
       {/* Logo */}
-      <div>Cedric Quitor</div>
+      <div className="font-oswald text-3xl">CEDRICQ</div>
       {/* Links */}
-      <div>
-        <ul className="flex gap-4">
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Contact</li>
+      <div className="hidden md:flex">
+        <ul className="flex gap-8 font-oswald text-xl my-auto">
+          <Link href="/about">ABOUT</Link>
+          <Link href="/projects">PROJECTS</Link>
+          <Link href="/contact">CONTACT</Link>
         </ul>
+      </div>
+      <div className="flex md:hidden">
+        <GiHamburgerMenu />
       </div>
     </div>
   );
