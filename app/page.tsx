@@ -23,6 +23,10 @@ export default function Home() {
           {/* About Me */}
           <div className="">
             <h1>About Me</h1>
+            <p>
+              Hi there! My name is Cedric Quitor and I am an IT student at the University of Santo Tomas. After I finish my bachelor's degree, I plan to pursue a career in data science. Aside from that, I am also very interested in building web,
+              data, and AI/ML applications. I am excited to see what the future holds for me and I am eager to learn more about this field.
+            </p>
           </div>
           {/* My Works */}
           <div className="">
