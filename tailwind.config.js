@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        oswald: "'Oswald', sans-serif",
-        source: "'Source Sans Pro', sans-serif",
+        oswald: "var(--oswald-font)",
+        source: "var(--source-font)",
       },
     },
   },

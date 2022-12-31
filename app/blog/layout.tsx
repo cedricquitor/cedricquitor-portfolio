@@ -25,15 +25,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html>
-      <head />
-      <body>
-        <div className="mx-auto max-w-3xl px-6 md:px-0">
-          <Header />
-          {children}
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <div className="mx-auto max-w-4xl px-6 md:px-0">
+      <Header />
+      {children}
+      <Footer />
+    </div>
   );
 }
