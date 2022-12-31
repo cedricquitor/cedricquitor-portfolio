@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
+import { Oswald } from "@next/font/google";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
       <Navbar />
       {/* Main Content Area */}
       <div className="h-screen mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="my-[10%] grid grid-cols-1 md:grid-cols-2">
           {/* Grid 1 - Left */}
           <div className="order-2 md:order-1">
             <h2 className="font-source text-4xl">Hello!👋</h2>
