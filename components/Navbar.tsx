@@ -6,14 +6,20 @@ const Navbar = () => {
     <div className="flex justify-between py-8">
       {/* Logo */}
       <Link href="/">
-        <div className="font-source text-3xl">CEDRICQ</div>
+        <div className="font-oswald text-3xl">CEDRICQ</div>
       </Link>
       {/* Links */}
       <div className="hidden md:flex">
-        <ul className="flex gap-8 font-oswald text-xl my-auto">
-          <Link href="/about">ABOUT</Link>
-          <Link href="/blog">BLOG</Link>
-          <Link href="/contact">CONTACT</Link>
+        <ul className="flex gap-8 uppercase font-oswald text-xl my-auto">
+          <Link href="/about" className="transition duration-500 hover:text-sky-600">
+            About
+          </Link>
+          <Link href="/blog" className="transition duration-500 hover:text-[#125ba6]">
+            Blog
+          </Link>
+          <Link href="/contact" className="transition duration-500 hover:text-blue-900">
+            Contact
+          </Link>
         </ul>
       </div>
       <div className="flex md:hidden">
