@@ -26,7 +26,7 @@ const PostPage = (props: any) => {
     <div>
       <div className="flex justify-between items-center">
         <h1>Back</h1>
-        <h1 className="text-2xl text-violet-600 font-bold text-center">{post.data.title}</h1>
+        <h1 className="text-2xl text-blue-900 font-bold text-center">{post.data.title}</h1>
         <h1>Socials</h1>
       </div>
       <article className="prose lg:prose-xl">
