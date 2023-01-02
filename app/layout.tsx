@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body>
-        <div className={`mx-auto max-w-4xl px-6 md:px-0 font-source`}>{children}</div>
+        <div className={`mx-auto max-w-2xl px-6 md:px-0 font-source`}>{children}</div>
       </body>
     </html>
   );

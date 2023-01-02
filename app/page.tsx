@@ -7,7 +7,7 @@ export default function Home() {
       {/* Navbar */}
       <Navbar />
       {/* Main Content Area */}
-      <div className="h-screen mx-auto">
+      <div>
         {/* Add grid grid-cols-1 md:grid-cols-2 when if implementing 3D */}
         <div className="my-[10%] flex items-center justify-center">
           {/* Grid 1 - Left */}
@@ -27,15 +27,15 @@ export default function Home() {
         </div>
         {/* About Me */}
         <div className="">
-          <h1 className="font-oswald text-4xl">About me</h1>
-          <p className="mt-4 font-source text-2xl">
+          <h1 className="font-oswald text-3xl">About me</h1>
+          <p className="mt-4 font-source text-xl">
             Hi there! My name is Cedric Quitor and I am an IT student at the University of Santo Tomas. After I finish my bachelor's degree, I plan to pursue a career in data science. Aside from that, I am also very interested in building web, data,
             and AI/ML applications. I am excited to see what the future holds for me and I am eager to learn more about this field.
           </p>
         </div>
         {/* My Works */}
         <div className="my-[10%]">
-          <h1 className="font-oswald text-4xl">My works</h1>
+          <h1 className="font-oswald text-3xl">My works</h1>
           <div className="mt-4 grid grid-cols-2">
             <h1>Post 1</h1>
             <h1>Post 2</h1>
@@ -44,7 +44,7 @@ export default function Home() {
         {/* Get In Touch */}
         <div className="">
           {/* Contact Form */}
-          <h1 className="font-oswald text-4xl">Get in touch</h1>
+          <h1 className="font-oswald text-3xl">Get in touch</h1>
           <h1 className="mt-4">Let's get in touch</h1>
           <h1>Add contact me form here</h1>
         </div>
