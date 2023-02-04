@@ -14,6 +14,10 @@ const ContactMe = () => {
         <h1>Messenger</h1>
         <p>cj.quitor</p>
       </div>
+      <div>
+        Freelance Available
+        <p>I&apos;m available for freelance hire</p>
+      </div>
     </div>
   );
 };

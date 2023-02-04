@@ -15,6 +15,29 @@ const AboutMe = () => {
   );
 };
 
+const Education = () => {
+  return (
+    <div>
+      <div>
+        <div>
+          <h1>UST Logo</h1>
+          <h1>UST CICS Logo</h1>
+        </div>
+        <h1>University of Santo Tomas</h1>
+        <h2>Bachelor of Science in Information Technology</h2>
+      </div>
+      <div>
+        <div>
+          <h1>UST Logo</h1>
+          <h1>UST SHS Logo</h1>
+        </div>
+        <h1>University of Santo Tomas Senior High School</h1>
+        <h2>Accountacy, Business, and Management Strand</h2>
+      </div>
+    </div>
+  );
+};
+
 const Tools = () => {
   return (
     <div>
@@ -68,6 +91,7 @@ const About = () => {
     <div>
       <h1>About Me (Longer version)</h1>
       <AboutMe />
+      <Education />
       <Tools />
       <Experience />
       <Certifications />

@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="flex justify-between py-8">
       {/* Logo */}
       <Link href="/">
-        <div className="font-oswald text-3xl">CEDRICQ</div>
+        <div className="font-oswald text-3xl">hi@cedric.ph</div>
       </Link>
       {/* Links */}
       <div className="hidden md:flex">
