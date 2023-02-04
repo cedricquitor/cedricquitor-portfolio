@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
         </ul>
       </div>
-      <div className="flex md:hidden">
+      <div className="flex md:hidden justify-center items-center">
         <GiHamburgerMenu />
       </div>
     </div>

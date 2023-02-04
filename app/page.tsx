@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
+import { typescript_logo, reactjs_logo, nodejs_logo, postgresql_logo } from "../public/images/techstack";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -44,6 +46,27 @@ const Projects = () => {
       <div className="mt-4 grid grid-cols-2">
         <h1>Post 1</h1>
         <h1>Post 2</h1>
+      </div>
+      <div>
+        <h1>Main Techstack</h1>
+        <div className="grid grid-cols-2 mt-4 place-items-center gap-8 md:grid-cols-4">
+          <div className="flex flex-col items-center justify-center bg-gray-200 p-4 w-[8rem] h-[8rem] rounded-2xl">
+            <Image src={typescript_logo} height={64} alt="TypeScript Logo" />
+            <h1>TypeScript</h1>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-gray-200 p-4 w-[8rem] h-[8rem] rounded-2xl">
+            <Image src={reactjs_logo} height={64} alt="ReactJS Logo" />
+            <h1>ReactJS</h1>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-gray-200 p-4 w-[8rem] h-[8rem] rounded-2xl">
+            <Image src={nodejs_logo} height={64} alt="NodeJS Logo" />
+            <h1>NodeJS</h1>
+          </div>
+          <div className="flex flex-col items-center justify-center bg-gray-200 p-4 w-[8rem] h-[8rem] rounded-2xl">
+            <Image src={postgresql_logo} height={64} alt="PostgreSQL Logo" />
+            <h1>PostgreSQL</h1>
+          </div>
+        </div>
       </div>
     </div>
   );
