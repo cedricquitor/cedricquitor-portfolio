@@ -1,10 +1,12 @@
 ---
-title: "Hello world"
-subtitle: "Discovering my passion for technology and how I got started."
+title: "From localhost to live"
+subtitle: "By building in public, you can get out of localhost and into the real world, where your product can make an impact."
 date: "2022-12-25"
 ---
 
-> The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks.
+> Why are you hiding it? It would be a waste not to finish it.
+>
+> Fireworks only become finished when they blossom beautifully in the night sky. Which is why all of the fireworks in the storehouse are unfinished goods.
 
 I took up **Accountancy, Business, and Management** (ABM) strand in Senior High School, and my first program in college was **Bachelor of Science in Accountancy** (BSA). How did I end up in tech?
 
