@@ -2,6 +2,7 @@
 title: "Hello world"
 subtitle: "Discovering my passion for technology and how I got started."
 date: "2022-12-25"
+duration: "3 min"
 ---
 
 > The biggest risk is not taking any risk. In a world that's changing quickly, the only strategy that is guaranteed to fail is not taking risks.
