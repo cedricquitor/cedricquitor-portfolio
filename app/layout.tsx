@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "@next/font/google";
 
@@ -15,6 +16,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
       <body>
+        {/* Navbar */}
+        <Navbar />
         <div className={`mx-auto max-w-2xl px-6 md:px-0 font-jakarta`}>{children}</div>
       </body>
     </html>

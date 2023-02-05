@@ -1,24 +1,26 @@
-import Navbar from "../components/Navbar";
 import Button from "../components/Button/Button";
 import { typescript_logo, reactjs_logo, nodejs_logo, postgresql_logo } from "../public/images/techstack";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-[80vh] flex items-center justify-center">
-      {/* Add grid grid-cols-1 md:grid-cols-2 when if implementing 3D */}
+    <div className="h-[65vh] mt-12">
+      {/* Add grid grid-cols-1 md:grid-cols-2 order-2 md:order-1 when if implementing 3D */}
       {/* Grid 1 - Left */}
-      <div className="order-2 md:order-1 text-center">
+      <div className="text-center flex flex-col gap-y-8">
         {/* Image Here (Your emoji) */}
-        <h2 className="font-source text-4xl">Hello!👋</h2>
-        <h1 className="font-source text-6xl mt-2">
-          I&apos;m <span className="font-oswald font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-900">Cedric Quitor</span>
-        </h1>
-        <p className="font-source text-4xl">
-          I build <span className="font-bold text-sky-600">web</span>, <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-blue-900">data</span>, and <span className="font-bold text-blue-900">AI/ML</span>{" "}
-          applications
-        </p>
-        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl w-1/4 mx-auto mt-6">Let&apos;s talk</Button>
+        <div className="flex flex-col items-center gap-y-6">
+          <div className="h-32 w-32 bg-[#37b47e] rounded-full" />
+          <h2 className="font-bold text-2xl">Hi, I&apos;m Cedric👋</h2>
+        </div>
+        <h1 className="text-7xl font-bold">Building web, data, and AI/ML applications.</h1>
+        <div className="mt-2">
+          <p className="text-2xl">
+            a <span className="font-bold">Software Engineer</span> based in Manila, PH.
+          </p>
+          <p className="text-2xl">I specialize in end-to-end development of digital products.</p>
+        </div>
+        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl w-1/4 mx-auto mt-6">Connect with me</Button>
       </div>
       {/* Grid 2 - Right
             <div className="order-1 md:order-2">3D Model Here</div> */}
@@ -99,8 +101,6 @@ const Contact = () => {
 export default function Home() {
   return (
     <>
-      {/* Navbar */}
-      <Navbar />
       {/* Main Content Area */}
       <div className="flex flex-col">
         <Hero />
