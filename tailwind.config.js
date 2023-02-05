@@ -4,8 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        oswald: "var(--oswald-font)",
-        source: "var(--source-font)",
+        jakarta: "var(--jakarta-font)",
       },
     },
   },

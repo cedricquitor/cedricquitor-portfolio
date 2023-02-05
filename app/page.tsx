@@ -30,7 +30,7 @@ const About = () => {
   return (
     <div className="">
       {/* About Me */}
-      <h1 className="font-oswald text-3xl">Who I am</h1>
+      <h1 className="font-bold text-3xl">Who I am</h1>
       <p className="mt-4 font-source text-xl">Hi there! My name is Cedric Quitor, a Software Engineer base in Manila, Philippines</p>
       <p className="mt-2 font-source text-xl">
         I am currently an IT student at the University of Santo Tomas. After I finish my bachelor&apos;s degree, I plan to pursue a career in data science. Aside from that, I am also very interested in building web, data, and AI/ML applications. I am
