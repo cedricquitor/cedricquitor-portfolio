@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const Header = () => {
@@ -27,7 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <div className="mx-auto max-w-2xl px-6 md:px-0">
-      <Navbar />
       <Header />
       {children}
       <Footer />

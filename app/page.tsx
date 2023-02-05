@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-[65vh] mt-12">
+    <div className="h-[65vh] mt-[20vh]">
       {/* Add grid grid-cols-1 md:grid-cols-2 order-2 md:order-1 when if implementing 3D */}
       {/* Grid 1 - Left */}
       <div className="text-center flex flex-col gap-y-8">
@@ -104,7 +104,7 @@ export default function Home() {
       {/* Main Content Area */}
       <div className="flex flex-col">
         <Hero />
-        <hr className="my-8" />
+        <hr className="mt-24" />
         <About />
         <hr className="my-8" />
         <Projects />
