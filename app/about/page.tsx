@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Button from "../../components/Button/Button";
+import { ust_logo, ustshs_logo, ustcics_logo } from "../../public/images/education";
 
 const AboutMe = () => {
   return (
@@ -33,9 +35,9 @@ const Education = () => {
     <div className="mt-8">
       <h1 className="font-bold text-3xl">Education</h1>
       <div>
-        <div>
-          <h1>UST Logo</h1>
-          <h1>UST CICS Logo</h1>
+        <div className="flex">
+          <Image src={ust_logo} height={48} alt="University of Santo Tomas Logo" />
+          <Image src={ustcics_logo} height={48} alt="University of Santo Tomas College of Information and Computing Sciences Logo" />
         </div>
         <h1>University of Santo Tomas</h1>
         <h2>Bachelor of Science in Information Technology</h2>
