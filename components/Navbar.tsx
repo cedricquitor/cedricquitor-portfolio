@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed z-50 w-full top-0 flex justify-between py-16 px-8 md:px-16 ${isScrolled ? "bg-[#37b47e] shadow-md" : ""}`}>
+    <nav className={`fixed z-50 w-full top-0 flex justify-between py-16 px-8 md:px-16 transition duration-300 ${isScrolled ? "bg-[#37b47e] shadow-md" : ""}`}>
       {/* Logo */}
       <Link href="/" className="flex items-center gap-x-8">
         <p className="font-bold text-2xl">C</p>
