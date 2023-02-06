@@ -1,23 +1,37 @@
+import Button from "../../components/Button/Button";
+
 const AboutMe = () => {
   return (
-    <div className="flex flex-col gap-4">
-      <p>
-        Welcome to my portfolio project website! I&apos;m Cedric Quitor, a student at the University of Santo Tomas pursuing a degree in IT. My passion for technology and data drives me to continuously learn and expand my knowledge in the field. I am
-        particularly interested in data science and have a goal of pursuing a career in this exciting field after completing my bachelor&apos;s degree.
-      </p>
-      <p>Aside from academics, I am also keen on developing web, data, and AI/ML applications. I believe that technology has the power to solve some of the world&apos;s biggest challenges, and I am eager to contribute my own solutions.</p>
-      <p>
-        As a student, I am always looking for new opportunities to learn and grow, and I am excited to see what the future holds for me in this constantly evolving field. I hope to make a difference by utilizing my technical skills and passion for
-        technology to make a positive impact in the world.
-      </p>
-      <p>Thank you for taking the time to visit my portfolio website. If you have any questions or would like to learn more about my work, don&apos;t hesitate to get in touch!</p>
+    <div className="flex flex-col">
+      <h1 className="font-bold text-3xl">Get to know more about me</h1>
+      <div className="flex mt-4 gap-x-8 items-center">
+        <div>
+          <div className="h-48 w-48 bg-[#37b47e] rounded-full" />
+        </div>
+        <p>
+          Welcome to my portfolio project website! I&apos;m Cedric Quitor, a student at the University of Santo Tomas pursuing a degree in IT. My passion for technology and data drives me to continuously learn and expand my knowledge in the field. I
+          am particularly interested in data science and have a goal of pursuing a career in this exciting field after completing my bachelor&apos;s degree.
+        </p>
+      </div>
+      <div className="mt-4">
+        <p className="text-gray-500">
+          Aside from academics, I am also keen on developing web, data, and AI/ML applications. I believe that technology has the power to solve some of the world&apos;s biggest challenges, and I am eager to contribute my own solutions.
+        </p>
+        <p className="mt-2">
+          As a student, I am always looking for new opportunities to learn and grow, and I am excited to see what the future holds for me in this constantly evolving field. I hope to make a difference by utilizing my technical skills and passion for
+          technology to make a positive impact in the world.
+        </p>
+        <p className="mt-2">Thank you for taking the time to visit my portfolio website. If you have any questions or would like to learn more about my work, don&apos;t hesitate to get in touch!</p>
+      </div>
+      <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mt-6">Connect with me</Button>
     </div>
   );
 };
 
 const Education = () => {
   return (
-    <div>
+    <div className="mt-8">
+      <h1 className="font-bold text-3xl">Education</h1>
       <div>
         <div>
           <h1>UST Logo</h1>
@@ -88,8 +102,7 @@ const Certifications = () => {
 
 const About = () => {
   return (
-    <div>
-      <h1>About Me (Longer version)</h1>
+    <div className="mt-[20vh]">
       <AboutMe />
       <Education />
       <Tools />
