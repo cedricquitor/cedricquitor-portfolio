@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface Props {
-  image: string;
   name: string;
+  image: StaticImageData;
 }
 
-const ToolItem = ({ name, image }: Props) => {
+const ToolItem: React.FC<Props> = ({ name, image }) => {
   return (
     <div className="flex flex-col items-center justify-center bg-gray-200 h-[12rem] rounded-2xl md:h-[9rem]">
       <Image src={image} height={64} alt={`${name} Logo`} />

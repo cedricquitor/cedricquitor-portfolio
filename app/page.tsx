@@ -2,6 +2,7 @@ import Link from "next/link";
 import Button from "../components/Button/Button";
 import { typescript_logo, reactjs_logo, nodejs_logo, postgresql_logo } from "../public/images/techstack";
 import Image from "next/image";
+import ToolItem from "../components/ToolItem";
 
 const Hero = () => {
   return (
@@ -30,6 +31,25 @@ const Hero = () => {
 };
 
 const About = () => {
+  const Tools = [
+    {
+      name: "TypeScript",
+      image: typescript_logo,
+    },
+    {
+      name: "ReactJS",
+      image: reactjs_logo,
+    },
+    {
+      name: "NodeJS",
+      image: nodejs_logo,
+    },
+    {
+      name: "PostgreSQL",
+      image: postgresql_logo,
+    },
+  ];
+
   return (
     <div className="mt-8">
       {/* About Me */}
@@ -58,22 +78,9 @@ const About = () => {
         <h1 className="font-oswald text-3xl">How I do it</h1>
         <p>These are the languages and tools I mainly use.</p>
         <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div className="flex flex-col items-center justify-center bg-gray-200 h-[12rem] rounded-2xl md:h-[9rem]">
-            <Image src={typescript_logo} height={64} alt="TypeScript Logo" />
-            <h1>TypeScript</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center bg-gray-200 h-[12rem] rounded-2xl md:h-[9rem]">
-            <Image src={reactjs_logo} height={64} alt="ReactJS Logo" />
-            <h1>ReactJS</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center bg-gray-200 h-[12rem] rounded-2xl md:h-[9rem]">
-            <Image src={nodejs_logo} height={64} alt="NodeJS Logo" />
-            <h1>NodeJS</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center bg-gray-200 h-[12rem] rounded-2xl md:h-[9rem]">
-            <Image src={postgresql_logo} height={64} alt="PostgreSQL Logo" />
-            <h1>PostgreSQL</h1>
-          </div>
+          {Tools.map((tool) => (
+            <ToolItem key={tool.name} name={tool.name} image={tool.image} />
+          ))}
         </div>
         <div className="mt-4">
           <Link href="/about" className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]">
