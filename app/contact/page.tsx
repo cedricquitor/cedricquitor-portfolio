@@ -54,7 +54,7 @@ const ContactForm = () => {
 
 const Contact = () => {
   return (
-    <div>
+    <div className="mt-[20vh]">
       <ContactMe />
       <Socials />
       <ContactForm />
