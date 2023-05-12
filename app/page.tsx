@@ -154,6 +154,18 @@ const Projects = () => {
   );
 };
 
+const Education = () => {
+  return <h1>Education</h1>;
+};
+
+const Experience = () => {
+  return <h1>Experience</h1>;
+};
+
+const AwardsAndCertificates = () => {
+  return <h1>AwardsAndCertificates</h1>;
+};
+
 const Contact = () => {
   return (
     <div className="">
@@ -179,6 +191,12 @@ export default function Home() {
         <About />
         <hr className="my-8" />
         <Projects />
+        <hr className="my-8" />
+        <Experience />
+        <hr className="my-8" />
+        <Education />
+        <hr className="my-8" />
+        <AwardsAndCertificates />
         <hr className="my-8" />
         <Contact />
       </div>
