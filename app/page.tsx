@@ -13,6 +13,7 @@ import {
 import memoji from "../public/images/memoji.png";
 import Image from "next/image";
 import ToolItem from "../components/ToolItem";
+import ProjectItem from "../components/ProjectItem";
 
 const Hero = () => {
   return (
@@ -36,7 +37,7 @@ const Hero = () => {
             in Manila, PH.
           </p>
           <p className="text-2xl">
-            I specialize in end-to-end development of digital products.
+            I specialize in developing end-to-end ML pipelines.
           </p>
         </div>
         <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
@@ -103,14 +104,6 @@ const About = () => {
         data, and AI/ML applications. I am excited to see what the future holds
         for me and I am eager to learn more about this field.
       </p>
-      <div className="mt-4">
-        <Link
-          href="/about"
-          className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]"
-        >
-          Learn more about me
-        </Link>
-      </div>
       {/* What I do and Tech Stack */}
       <div className="mt-8">
         <h1 className="font-oswald text-3xl">What I do</h1>
@@ -140,14 +133,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4">
-          <Link
-            href="/about"
-            className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]"
-          >
-            Learn more about my arsenal
-          </Link>
-        </div>
       </div>
     </div>
   );
@@ -161,6 +146,9 @@ const Projects = () => {
       <div className="mt-4 grid grid-cols-2">
         <h1>DORA</h1>
         <h1>imaginkraf</h1>
+      </div>
+      <div className="mt-4">
+        <ProjectItem />
       </div>
     </div>
   );
