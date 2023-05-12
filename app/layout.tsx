@@ -7,7 +7,11 @@ const jakarta = Plus_Jakarta_Sans({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${jakarta.variable}`}>
       {/*
@@ -18,7 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         {/* Navbar */}
         <Navbar />
-        <div className={`mx-auto max-w-2xl px-6 md:px-0 font-jakarta`}>{children}</div>
+        <div className={`mx-auto max-w-4xl px-6 md:px-0 font-jakarta`}>
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Button from "../components/Button/Button";
-import { typescript_logo, reactjs_logo, nodejs_logo, postgresql_logo } from "../public/images/techstack";
+import {
+  typescript_logo,
+  reactjs_logo,
+  nodejs_logo,
+  postgresql_logo,
+} from "../public/images/techstack";
+import memoji from "../public/images/memoji.png";
 import Image from "next/image";
 import ToolItem from "../components/ToolItem";
 
@@ -12,17 +18,26 @@ const Hero = () => {
       <div className="text-center flex flex-col gap-y-8">
         {/* Image Here (Your emoji) */}
         <div className="flex flex-col items-center gap-y-6">
-          <div className="h-32 w-32 bg-[#37b47e] rounded-full" />
+          <div className="h-32 w-32 bg-[#37b47e] rounded-full flex justify-center items-center">
+            <Image src={memoji} alt="Cedric's Memoji" className="h-32 w-auto" />
+          </div>
           <h2 className="font-bold text-2xl">Hi, I&apos;m Cedric👋</h2>
         </div>
-        <h1 className="text-7xl font-bold">Building web, data, and AI/ML applications.</h1>
+        <h1 className="text-7xl font-bold">
+          Building web, data, and AI/ML applications.
+        </h1>
         <div className="mt-2">
           <p className="text-2xl">
-            a <span className="font-bold">Software Engineer</span> based in Manila, PH.
+            a <span className="font-bold">Machine Learning Engineer</span> based
+            in Manila, PH.
           </p>
-          <p className="text-2xl">I specialize in end-to-end development of digital products.</p>
+          <p className="text-2xl">
+            I specialize in end-to-end development of digital products.
+          </p>
         </div>
-        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">Connect with me</Button>
+        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
+          Connect with me
+        </Button>
       </div>
       {/* Grid 2 - Right
             <div className="order-1 md:order-2">3D Model Here</div> */}
@@ -31,7 +46,7 @@ const Hero = () => {
 };
 
 const About = () => {
-  const Tools = [
+  const seTools = [
     {
       name: "TypeScript",
       image: typescript_logo,
@@ -50,40 +65,75 @@ const About = () => {
     },
   ];
 
+  const mlTools = [
+    {
+      name: "Python",
+      image: "pythonimg",
+    },
+    {
+      name: "Scikit-learn",
+      image: "scikitlearnimg",
+    },
+    {
+      name: "TensorFlow",
+      image: "tensorflowimg",
+    },
+    {
+      name: "Flask",
+      image: "flaskimg",
+    },
+  ];
+
   return (
     <div className="mt-8">
       {/* About Me */}
       <h1 className="font-bold text-3xl">Who I am</h1>
-      <p className="mt-4 text-xl">Hi there! My name is Cedric Quitor, a Software Engineer base in Manila, Philippines</p>
+      <p className="mt-4 text-xl">
+        Hi there! My name is Cedric Quitor, a Machine Learning Engineer base in
+        Manila, Philippines
+      </p>
       <p className="mt-2 text-xl">
-        I am currently an IT student at the University of Santo Tomas. After I finish my bachelor&apos;s degree, I plan to pursue a career in Software Engineering. Aside from that, I am also very interested in building web, data, and AI/ML
-        applications. I am excited to see what the future holds for me and I am eager to learn more about this field.
+        I am currently an IT student at the University of Santo Tomas. After I
+        finish my bachelor&apos;s degree, I plan to pursue a career in Software
+        Engineering. Aside from that, I am also very interested in building web,
+        data, and AI/ML applications. I am excited to see what the future holds
+        for me and I am eager to learn more about this field.
       </p>
       <div className="mt-4">
-        <Link href="/about" className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]">
+        <Link
+          href="/about"
+          className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]"
+        >
           Learn more about me
         </Link>
       </div>
-      {/* Services Offered */}
+      {/* What I do and Tech Stack */}
       <div className="mt-8">
         <h1 className="font-oswald text-3xl">What I do</h1>
         <div className="mt-4">
-          <h1>Development</h1>
-          <h1>UI/UX Design</h1>
-          <h1>SEO Marketing</h1>
+          <div>
+            <h2 className="text-2xl">Machine Learning</h2>
+          </div>
+          <div>
+            <h2 className="text-2xl">Software Engineering</h2>
+            <p>
+              These are the languages and tools I mainly use in creating web
+              applications.
+            </p>
+            <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
+              {seTools.map((tool) => (
+                <ToolItem key={tool.name} name={tool.name} image={tool.image} />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-      {/* Main Techstack */}
-      <div className="mt-8">
         <h1 className="font-oswald text-3xl">How I do it</h1>
-        <p>These are the languages and tools I mainly use.</p>
-        <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
-          {Tools.map((tool) => (
-            <ToolItem key={tool.name} name={tool.name} image={tool.image} />
-          ))}
-        </div>
+
         <div className="mt-4">
-          <Link href="/about" className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]">
+          <Link
+            href="/about"
+            className="text-xl underline underline-offset-8 transition duration-300 hover:text-[#37b47e]"
+          >
             Learn more about my arsenal
           </Link>
         </div>
@@ -111,7 +161,10 @@ const Contact = () => {
       {/* Get In Touch */}
       {/* Contact Form */}
       <h1 className="font-oswald text-3xl">Get in touch</h1>
-      <h1 className="mt-4">Get in touch to discuss your next software project. Let&apos;s make it happen.</h1>
+      <h1 className="mt-4">
+        Get in touch to discuss your next software project. Let&apos;s make it
+        happen.
+      </h1>
       <h1>Add contact me form here</h1>
     </div>
   );
