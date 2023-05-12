@@ -18,7 +18,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed z-50 w-full top-0 flex justify-between py-16 px-8 md:px-16 transition duration-300 ${isScrolled ? "bg-[#37b47e] shadow-md" : ""}`}>
+    <nav
+      className={`fixed z-50 w-full top-0 flex justify-between py-16 px-8 md:px-16 transition-all duration-300 ${
+        isScrolled ? "backdrop-filter backdrop-blur-lg shadow-md py-8" : ""
+      }`}
+    >
       {/* Logo */}
       <Link href="/" className="flex items-center gap-x-8">
         <p className="font-bold text-2xl">C</p>
@@ -26,14 +30,27 @@ const Navbar: React.FC = () => {
       </Link>
       {/* Links */}
       <div className="hidden md:flex">
-        <ul className="flex gap-8 font-bold text-xl my-auto">
-          <Link href="/about" className="transition duration-500 hover:text-sky-600">
+        <ul
+          className={`flex gap-8 font-bold my-auto ${
+            isScrolled ? "text-base" : "text-xl"
+          }`}
+        >
+          <Link
+            href="/about"
+            className="transition duration-500 hover:text-sky-600"
+          >
             About
           </Link>
-          <Link href="/blog" className="transition duration-500 hover:text-[#125ba6]">
+          <Link
+            href="/blog"
+            className="transition duration-500 hover:text-[#125ba6]"
+          >
             Blog
           </Link>
-          <Link href="/contact" className="transition duration-500 hover:text-blue-900">
+          <Link
+            href="/contact"
+            className="transition duration-500 hover:text-blue-900"
+          >
             Contact
           </Link>
         </ul>
