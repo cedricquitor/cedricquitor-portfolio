@@ -5,6 +5,10 @@ import {
   reactjs_logo,
   nodejs_logo,
   postgresql_logo,
+  python_logo,
+  scikitlearn_logo,
+  tensorflow_logo,
+  flask_logo,
 } from "../public/images/techstack";
 import memoji from "../public/images/memoji.png";
 import Image from "next/image";
@@ -68,19 +72,19 @@ const About = () => {
   const mlTools = [
     {
       name: "Python",
-      image: "pythonimg",
+      image: python_logo,
     },
     {
       name: "Scikit-learn",
-      image: "scikitlearnimg",
+      image: scikitlearn_logo,
     },
     {
       name: "TensorFlow",
-      image: "tensorflowimg",
+      image: tensorflow_logo,
     },
     {
       name: "Flask",
-      image: "flaskimg",
+      image: flask_logo,
     },
   ];
 
@@ -110,9 +114,18 @@ const About = () => {
       {/* What I do and Tech Stack */}
       <div className="mt-8">
         <h1 className="font-oswald text-3xl">What I do</h1>
-        <div className="mt-4">
+        <div className="mt-4 space-y-8">
           <div>
             <h2 className="text-2xl">Machine Learning</h2>
+            <p>
+              These are the languages and tools I mainly use in experimenting
+              with and deploying machine learning models.
+            </p>
+            <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
+              {mlTools.map((tool) => (
+                <ToolItem key={tool.name} name={tool.name} image={tool.image} />
+              ))}
+            </div>
           </div>
           <div>
             <h2 className="text-2xl">Software Engineering</h2>
@@ -127,8 +140,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        <h1 className="font-oswald text-3xl">How I do it</h1>
-
         <div className="mt-4">
           <Link
             href="/about"
