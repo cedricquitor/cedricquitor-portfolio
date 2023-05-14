@@ -14,6 +14,12 @@ import memoji from "../public/images/memoji.png";
 import Image from "next/image";
 import ToolItem from "../components/ToolItem";
 import ProjectItem from "../components/ProjectItem";
+import {
+  ust_logo,
+  ustcics_logo,
+  ustshs_logo,
+} from "../public/images/education";
+import { dorav4 } from "../public/images/project";
 
 const Hero = () => {
   return (
@@ -40,9 +46,11 @@ const Hero = () => {
             I specialize in developing end-to-end ML pipelines.
           </p>
         </div>
-        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
-          Connect with me
-        </Button>
+        <Link href="https://www.linkedin.com/in/cedricquitor/" target="_blank">
+          <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
+            Connect with me
+          </Button>
+        </Link>
       </div>
       {/* Grid 2 - Right
             <div className="order-1 md:order-2">3D Model Here</div> */}
@@ -139,6 +147,8 @@ const About = () => {
 };
 
 const Projects = () => {
+  const dorav4Desc =
+    "Disaster Online Reporting Application (DORA) version 4 is an Android-based mobile application that allows users to easily and quickly report disasters in real-time. With this app, users can provide critical information about the disaster, including its location, type, and images allowing emergency responders to emergency responders to quickly and effectively respond to the situation.";
   return (
     <div className="">
       {/* My Works */}
@@ -148,14 +158,79 @@ const Projects = () => {
         <h1>imaginkraf</h1>
       </div>
       <div className="mt-4">
-        <ProjectItem />
+        <ProjectItem
+          title="Disaster Online Reporting Application v4"
+          image={dorav4}
+          tags={["JavaScript", "ReactJS", "Firebase", "Google Maps API"]}
+          description={dorav4Desc}
+        />
       </div>
     </div>
   );
 };
 
 const Education = () => {
-  return <h1>Education</h1>;
+  return (
+    <div className="mt-8">
+      <h1 className="font-bold text-3xl">Education</h1>
+      <div className="mt-4 flex flex-col gap-y-4">
+        {/* TOOD: Make this card a component */}
+        <div className="outline outline-2 outline-gray-200 p-4 rounded-2xl flex justify-between items-center">
+          <div>
+            <h1 className="font-bold text-2xl text-[#37b47e]">
+              University of Santo Tomas
+            </h1>
+            <h2 className="font-bold text-sm text-[#37b47e]">
+              College of Information and Computing Sciences
+            </h2>
+            <h2 className="font-bold text-sm">
+              Bachelor of Science in Information Technology
+            </h2>
+            <h3 className="italic text-sm">
+              Specialization in Web and Mobile Development
+            </h3>
+          </div>
+          <div className="flex gap-x-4 justify-between w-[8rem]">
+            <Image
+              src={ust_logo}
+              height={56}
+              alt="University of Santo Tomas Logo"
+            />
+            <Image
+              src={ustcics_logo}
+              height={56}
+              alt="University of Santo Tomas College of Information and Computing Sciences Logo"
+            />
+          </div>
+        </div>
+        <div className="outline outline-2 outline-gray-200 p-4 rounded-2xl flex justify-between items-center">
+          <div>
+            <h1 className="font-bold text-2xl text-[#37b47e]">
+              University of Santo Tomas
+            </h1>
+            <h2 className="font-bold text-sm text-[#37b47e]">
+              Senior High School
+            </h2>
+            <h2 className="font-bold text-sm">
+              Accountacy, Business, and Management Strand
+            </h2>
+          </div>
+          <div className="flex gap-x-4 justify-between w-[8rem]">
+            <Image
+              src={ust_logo}
+              height={56}
+              alt="University of Santo Tomas Logo"
+            />
+            <Image
+              src={ustshs_logo}
+              height={56}
+              alt="University of Santo Tomas College of Information and Computing Sciences Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const Experience = () => {
