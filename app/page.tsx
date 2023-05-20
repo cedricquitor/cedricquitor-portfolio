@@ -63,15 +63,35 @@ const About = () => {
       {/* About Me */}
       <h1 className="font-bold text-3xl">About</h1>
       <p className="mt-4 text-xl">
-        Hi there! My name is Cedric Quitor, a Machine Learning Engineer base in
-        Manila, Philippines
+        Hello there! My name is Cedric Quitor, and I&apos;sm delighted to
+        introduce myself as a Software Engineer based in Manila, Philippines 🇵🇭
       </p>
       <p className="mt-2 text-xl">
-        I am currently an IT student at the University of Santo Tomas. After I
-        finish my bachelor&apos;s degree, I plan to pursue a career in Software
-        Engineering. Aside from that, I am also very interested in building web,
-        data, and AI/ML applications. I am excited to see what the future holds
-        for me and I am eager to learn more about this field.
+        I recently completed my{" "}
+        <span>Bachelor of Science degree in Information Technology</span> from
+        the esteemed <span>University of Santo Tomas</span>. Currently, I am
+        focused on <span>pursuing a career in Software Engineering</span>, with
+        a keen interest in transitioning to the field of Machine Learning
+        Engineering in the future. My passion lies in{" "}
+        <span>developing web applications</span> and exploring the world of
+        AI/ML applications.
+      </p>
+      <p className="mt-2 text-xl">
+        Throughout my academic journey, I had the privilege of being recognized
+        for my efforts and dedication. I am humbled to have been{" "}
+        <span>included in the Dean&apos;s List on multiple occasions</span>,
+        which reflects my commitment to achieving academic excellence.
+        Additionally, I take great pride in being awarded the{" "}
+        <span>Top 3 honor for the Best Capstone Project</span>, an
+        accomplishment that fuels my curiosity and motivates me to continually
+        push the boundaries of innovation.
+      </p>
+      <p className="mt-2 text-xl">
+        I am thrilled by the endless possibilities that lie ahead in the
+        software engineering field. The ever-evolving nature of technology
+        presents exciting challenges, and I am eager to immerse myself in new
+        experiences, acquire further knowledge, and contribute to groundbreaking
+        projects.
       </p>
     </div>
   );
