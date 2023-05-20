@@ -62,36 +62,26 @@ const About = () => {
     <div className="mt-8">
       {/* About Me */}
       <h1 className="font-bold text-3xl">About</h1>
-      <p className="mt-4 text-xl">
-        Hello there! My name is Cedric Quitor, and I&apos;sm delighted to
-        introduce myself as a Software Engineer based in Manila, Philippines 🇵🇭
-      </p>
-      <p className="mt-2 text-xl">
-        I recently completed my{" "}
+      <p className="mt-4">
+        Hello! I&apos;m Cedric Quitor, a Software Engineer based in Manila,
+        Philippines🇵🇭. I recently graduated with a{" "}
         <span>Bachelor of Science degree in Information Technology</span> from
-        the esteemed <span>University of Santo Tomas</span>. Currently, I am
-        focused on <span>pursuing a career in Software Engineering</span>, with
-        a keen interest in transitioning to the field of Machine Learning
-        Engineering in the future. My passion lies in{" "}
-        <span>developing web applications</span> and exploring the world of
-        AI/ML applications.
+        the prestigious <span>University of Santo Tomas</span>. Currently, I am
+        focused on pursuing a career in Software Engineering and have a keen
+        interest in transitioning to the field of Machine Learning Engineering
+        in the future. My passion lies in{" "}
+        <span>full-stack development of web applications</span> and exploring
+        the world of AI/ML applications.
       </p>
-      <p className="mt-2 text-xl">
-        Throughout my academic journey, I had the privilege of being recognized
-        for my efforts and dedication. I am humbled to have been{" "}
-        <span>included in the Dean&apos;s List on multiple occasions</span>,
-        which reflects my commitment to achieving academic excellence.
-        Additionally, I take great pride in being awarded the{" "}
-        <span>Top 3 honor for the Best Capstone Project</span>, an
-        accomplishment that fuels my curiosity and motivates me to continually
-        push the boundaries of innovation.
-      </p>
-      <p className="mt-2 text-xl">
-        I am thrilled by the endless possibilities that lie ahead in the
-        software engineering field. The ever-evolving nature of technology
-        presents exciting challenges, and I am eager to immerse myself in new
-        experiences, acquire further knowledge, and contribute to groundbreaking
-        projects.
+      <p className="mt-2">
+        Throughout my academic journey, I have been honored to be included in
+        the <span>Dean&apos;s List on multiple occasions</span>, highlighting my
+        dedication to academic excellence. Additionally, I take great pride in
+        receiving the <span>Top 3 award for the Best Capstone Project</span>,
+        which fuels my curiosity and motivates me to push the boundaries of
+        innovation. I am thrilled by the endless possibilities in the software
+        engineering field and am eager to immerse myself in new experiences,
+        acquire further knowledge, and contribute to groundbreaking projects.
       </p>
     </div>
   );
@@ -243,7 +233,7 @@ const Experience = () => {
 
   return (
     <div>
-      <h1>Experience</h1>
+      <h1 className="font-bold text-3xl">Experience</h1>
       <div className="flex flex-row">
         {/* Left Side */}
         <div className="w-1/4 p-4">
