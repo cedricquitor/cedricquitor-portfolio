@@ -400,7 +400,26 @@ const AwardsAndCertificates = () => {
 const Contact = () => {
   return (
     <div className="container mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+      <h1 className="text-3xl font-bold mb-6 text-center">
+        Let&apos;s work together
+      </h1>
+      <p className="text-center">
+        I&apos;m always open to discussing software engineering work or
+        partnership opportunities
+      </p>
+      <Link href="https://cal.com/cedricquitor/" target="_blank">
+        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
+          Schedule a call
+        </Button>
+      </Link>
+      <p className="text-gray-400 text-center mt-2">
+        or{" "}
+        <Link href="https://www.linkedin.com/in/cedricquitor/" target="_blank">
+          <span className="font-bold">connect</span>
+        </Link>{" "}
+        with me instead
+      </p>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <h3 className="text-xl font-semibold mb-2">Contact Information</h3>
