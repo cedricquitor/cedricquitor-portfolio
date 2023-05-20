@@ -16,11 +16,6 @@ import memoji from "../public/images/memoji.png";
 import Image from "next/image";
 import ToolItem from "../components/ToolItem";
 import ProjectItem from "../components/ProjectItem";
-import {
-  ust_logo,
-  ustcics_logo,
-  ustshs_logo,
-} from "../public/images/education";
 import { dorav4 } from "../public/images/project";
 import { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -176,71 +171,6 @@ const Projects = () => {
           tags={["JavaScript", "ReactJS", "Firebase", "Google Maps API"]}
           description={dorav4Desc}
         />
-      </div>
-    </div>
-  );
-};
-
-// Temporary
-const Education = () => {
-  return (
-    <div className="mt-8">
-      <h1 className="font-bold text-3xl">Education</h1>
-      <div className="mt-4 flex flex-col gap-y-4">
-        {/* TOOD: Make this card a component */}
-        <div className="outline outline-2 outline-gray-200 p-4 rounded-2xl flex justify-between items-center">
-          <div>
-            <h1 className="font-bold text-2xl text-[#37b47e]">
-              University of Santo Tomas
-            </h1>
-            <h2 className="font-bold text-sm text-[#37b47e]">
-              College of Information and Computing Sciences
-            </h2>
-            <h2 className="font-bold text-sm">
-              Bachelor of Science in Information Technology,{" "}
-              <span className="font-normal text-gray-400 italic text-sm">
-                Specialization in Web and Mobile Development
-              </span>
-            </h2>
-          </div>
-          <div className="flex gap-x-4 justify-between w-[8rem]">
-            <Image
-              src={ust_logo}
-              height={56}
-              alt="University of Santo Tomas Logo"
-            />
-            <Image
-              src={ustcics_logo}
-              height={56}
-              alt="University of Santo Tomas College of Information and Computing Sciences Logo"
-            />
-          </div>
-        </div>
-        <div className="outline outline-2 outline-gray-200 p-4 rounded-2xl flex justify-between items-center">
-          <div>
-            <h1 className="font-bold text-2xl text-[#37b47e]">
-              University of Santo Tomas
-            </h1>
-            <h2 className="font-bold text-sm text-[#37b47e]">
-              Senior High School
-            </h2>
-            <h2 className="font-bold text-sm">
-              Accountacy, Business, and Management Strand
-            </h2>
-          </div>
-          <div className="flex gap-x-4 justify-between w-[8rem]">
-            <Image
-              src={ust_logo}
-              height={56}
-              alt="University of Santo Tomas Logo"
-            />
-            <Image
-              src={ustshs_logo}
-              height={56}
-              alt="University of Santo Tomas College of Information and Computing Sciences Logo"
-            />
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -462,8 +392,6 @@ export default function Home() {
         <Hero />
         <hr className="mt-24" />
         <About />
-        <hr className="my-8" />
-        <Education />
         <hr className="my-8" />
         <Skills />
         <hr className="my-8" />
