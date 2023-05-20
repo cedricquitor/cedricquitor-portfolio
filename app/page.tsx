@@ -63,6 +63,26 @@ const Hero = () => {
 };
 
 const About = () => {
+  return (
+    <div className="mt-8">
+      {/* About Me */}
+      <h1 className="font-bold text-3xl">About</h1>
+      <p className="mt-4 text-xl">
+        Hi there! My name is Cedric Quitor, a Machine Learning Engineer base in
+        Manila, Philippines
+      </p>
+      <p className="mt-2 text-xl">
+        I am currently an IT student at the University of Santo Tomas. After I
+        finish my bachelor&apos;s degree, I plan to pursue a career in Software
+        Engineering. Aside from that, I am also very interested in building web,
+        data, and AI/ML applications. I am excited to see what the future holds
+        for me and I am eager to learn more about this field.
+      </p>
+    </div>
+  );
+};
+
+const Skills = () => {
   const seTools = [
     {
       name: "TypeScript",
@@ -102,23 +122,10 @@ const About = () => {
   ];
 
   return (
-    <div className="mt-8">
-      {/* About Me */}
-      <h1 className="font-bold text-3xl">Who I am</h1>
-      <p className="mt-4 text-xl">
-        Hi there! My name is Cedric Quitor, a Machine Learning Engineer base in
-        Manila, Philippines
-      </p>
-      <p className="mt-2 text-xl">
-        I am currently an IT student at the University of Santo Tomas. After I
-        finish my bachelor&apos;s degree, I plan to pursue a career in Software
-        Engineering. Aside from that, I am also very interested in building web,
-        data, and AI/ML applications. I am excited to see what the future holds
-        for me and I am eager to learn more about this field.
-      </p>
+    <>
       {/* What I do and Tech Stack */}
       <div className="mt-8">
-        <h1 className="font-oswald text-3xl">What I do</h1>
+        <h1 className="font-bold text-3xl">Skills</h1>
         <div className="mt-4 space-y-8">
           <div>
             <h2 className="text-2xl">Software Development</h2>
@@ -147,7 +154,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -157,7 +164,7 @@ const Projects = () => {
   return (
     <div className="">
       {/* My Works */}
-      <h1 className="font-oswald text-3xl">My works</h1>
+      <h1 className="font-bold text-3xl">Projects</h1>
       <div className="mt-4 grid grid-cols-2">
         <h1>DORA</h1>
         <h1>imaginkraf</h1>
@@ -456,11 +463,13 @@ export default function Home() {
         <hr className="mt-24" />
         <About />
         <hr className="my-8" />
+        <Education />
+        <hr className="my-8" />
+        <Skills />
+        <hr className="my-8" />
         <Projects />
         <hr className="my-8" />
         <Experience />
-        <hr className="my-8" />
-        <Education />
         <hr className="my-8" />
         <AwardsAndCertificates />
         <hr className="my-8" />
