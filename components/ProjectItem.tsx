@@ -1,8 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import { dorav4 } from "../public/images/project";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsMedium } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
-import { FaMedium } from "react-icons/fa";
 import Button from "./Button/Button";
 
 interface TagItemProps {
@@ -65,7 +64,7 @@ const ProjectItem = (props: ProjectItemProps) => {
             type="secondary"
             className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
           >
-            <FaMedium className="text-2xl" />
+            <BsMedium className="text-2xl" />
           </Button>
         </div>
       </div>
