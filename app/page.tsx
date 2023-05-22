@@ -1,78 +1,12 @@
 "use client";
-import Link from "next/link";
-import Button from "../components/Button/Button";
 
 import Image from "next/image";
-
-import ProjectItem from "../components/ProjectItem";
-import { dorav4 } from "../public/images/project";
-import { useState } from "react";
-import { MdKeyboardArrowRight } from "react-icons/md";
-import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from "react-icons/bs";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
-
-const AwardsAndCertificates = () => {
-  // Hardcoded certification data for demonstration
-  const certifications = [
-    {
-      id: 1,
-      title: "Certification 1",
-      organization: "Organization A",
-      date: "May 2022",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      logo: "/organization-a-logo.png", // Replace with the actual path of the organization's logo image in your Next.js project
-    },
-    {
-      id: 2,
-      title: "Certification 2",
-      organization: "Organization B",
-      date: "July 2022",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      logo: "/organization-b-logo.png", // Replace with the actual path of the organization's logo image in your Next.js project
-    },
-    // Add more certification objects as needed
-  ];
-
-  return (
-    <div className="container mx-auto py-8">
-      <h2 className="text-3xl font-bold mb-6">Certifications</h2>
-      <div className="grid gap-6">
-        {certifications.map((certification) => (
-          <div
-            key={certification.id}
-            className="bg-white shadow-lg rounded-lg overflow-hidden p-6 flex"
-          >
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold mb-2">
-                {certification.title}
-              </h3>
-              <p className="text-emerald-500 mb-4">
-                {certification.organization}
-              </p>
-              <p className="text-sm text-gray-500 mb-4">
-                Achieved: {certification.date}
-              </p>
-              <p className="text-gray-800">{certification.description}</p>
-            </div>
-            <div className="ml-4">
-              <Image
-                src={certification.logo}
-                alt={`${certification.organization} Logo`}
-                width={48}
-                height={48}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
 
 export default function Home() {
   return (
