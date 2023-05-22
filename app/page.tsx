@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import Button from "../components/Button/Button";
 import {
@@ -68,24 +67,24 @@ const About = () => {
   return (
     <div>
       <h1 className="font-bold text-3xl">About</h1>
-      <div className="flex gap-8">
-        <div className="flex w-2/6 justify-center items-center">
+      <div className="flex gap-8 mt-4">
+        <div className="flex w-2/6 justify-center">
           <Image
             src={mock_grad_pic}
             alt="Cedric's Graduation Picture"
             className="h-[65%] object-cover object-top rounded-full"
           />
         </div>
-        <div className="w-4/6 flex flex-col justify-center">
+        <div className="w-4/6 flex flex-col">
           {/* About Me */}
           <p className="">
             Hello! I&apos;m Cedric Quitor, a Software Engineer based in Manila,
             Philippines🇵🇭. I recently graduated with a{" "}
             <span>Bachelor of Science degree in Information Technology</span>{" "}
-            from the prestigious <span>University of Santo Tomas</span>.
-            Currently, I am focused on pursuing a career in Software Engineering
-            and have a keen interest in transitioning to the field of Machine
-            Learning Engineering in the future. My passion lies in{" "}
+            from the <span>University of Santo Tomas</span>. Currently, I am
+            focused on pursuing a career in Software Engineering and have a keen
+            interest in transitioning to the field of Machine Learning
+            Engineering in the future. My passion lies in{" "}
             <span>full-stack development of web applications</span> and
             exploring the world of AI/ML applications.
           </p>
@@ -415,8 +414,6 @@ export default function Home() {
         <Experience />
         <hr className="my-8" />
         <Projects />
-        <hr className="my-8" />
-        <AwardsAndCertificates />
         <hr className="my-8" />
         <Contact />
       </div>
