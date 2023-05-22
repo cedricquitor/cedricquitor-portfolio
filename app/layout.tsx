@@ -19,7 +19,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body suppressHydrationWarning={true}>
         {/* Navbar */}
         <Navbar />
         <div className={`mx-auto max-w-4xl px-6 md:px-0 font-jakarta`}>
