@@ -1,102 +1,17 @@
 "use client";
 import Link from "next/link";
 import Button from "../components/Button/Button";
-import {
-  typescript_logo,
-  reactjs_logo,
-  nodejs_logo,
-  postgresql_logo,
-  python_logo,
-  scikitlearn_logo,
-  tensorflow_logo,
-  flask_logo,
-} from "../public/images/techstack";
+
 import Image from "next/image";
-import ToolItem from "../components/ToolItem";
+
 import ProjectItem from "../components/ProjectItem";
 import { dorav4 } from "../public/images/project";
 import { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from "react-icons/bs";
-import { mock_grad_pic } from "../public/images/about";
 import Hero from "../components/Hero";
 import About from "../components/About";
-
-const Skills = () => {
-  const seTools = [
-    {
-      name: "TypeScript",
-      image: typescript_logo,
-    },
-    {
-      name: "ReactJS",
-      image: reactjs_logo,
-    },
-    {
-      name: "NodeJS",
-      image: nodejs_logo,
-    },
-    {
-      name: "PostgreSQL",
-      image: postgresql_logo,
-    },
-  ];
-
-  const mlTools = [
-    {
-      name: "Python",
-      image: python_logo,
-    },
-    {
-      name: "Scikit-learn",
-      image: scikitlearn_logo,
-    },
-    {
-      name: "TensorFlow",
-      image: tensorflow_logo,
-    },
-    {
-      name: "Flask",
-      image: flask_logo,
-    },
-  ];
-
-  return (
-    <>
-      {/* What I do and Tech Stack */}
-      <div className="mt-8">
-        <h1 className="font-bold text-3xl">Skills</h1>
-        <div className="mt-4 space-y-8">
-          <div>
-            <h2 className="text-2xl">Software Development</h2>
-            <p>
-              These are the languages and tools I mainly use in creating web
-              applications.
-            </p>
-            <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
-              {seTools.map((tool) => (
-                <ToolItem key={tool.name} name={tool.name} image={tool.image} />
-              ))}
-            </div>
-          </div>
-          {/* Here */}
-          <div>
-            <h2 className="text-2xl">Machine Learning</h2>
-            <p>
-              These are the languages and tools I mainly use in experimenting
-              with and deploying machine learning models.
-            </p>
-            <div className="mt-4 grid grid-cols-2 gap-8 md:grid-cols-4">
-              {mlTools.map((tool) => (
-                <ToolItem key={tool.name} name={tool.name} image={tool.image} />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+import Skills from "../components/Skills";
 
 const Projects = () => {
   const dorav4Desc =
