@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       {/* Main Content Area */}
-      <div className="flex flex-col mt-[20vh]">
+      <div className="flex flex-col">
         <Hero />
-        <hr className="mt-24" />
+        <hr className="my-8" />
         <About />
         <hr className="my-8" />
         <Skills />

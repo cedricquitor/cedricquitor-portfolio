@@ -5,7 +5,7 @@ import memoji from "../public/images/memoji.png";
 
 const Hero = () => {
   return (
-    <div className="h-[65vh]">
+    <div className="min-h-screen flex justify-center items-center">
       {/* Add grid grid-cols-1 md:grid-cols-2 order-2 md:order-1 when if implementing 3D */}
       {/* Grid 1 - Left */}
       <div className="text-center flex flex-col gap-y-8">

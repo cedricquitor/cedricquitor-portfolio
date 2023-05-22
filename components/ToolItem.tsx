@@ -7,7 +7,7 @@ interface Props {
 
 const ToolItem: React.FC<Props> = ({ name, image }) => {
   return (
-    <div className="flex flex-col items-center justify-center border group border-gray-200 bg-gray-100 h-[12rem] rounded-2xl md:h-[9rem] relative transition duration-500 hover:bg-gray-200 hover:border-emerald-600">
+    <div className="flex flex-col items-center justify-center border group border-gray-200 bg-slate-50 h-[12rem] rounded-2xl md:h-[9rem] relative transition duration-500 hover:bg-slate-300 hover:border-emerald-600">
       <Image
         src={image}
         height={64}

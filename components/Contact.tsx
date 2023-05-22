@@ -10,9 +10,9 @@ const Contact = () => {
       </h1>
       <div className="mt-6 flex text-3xl space-x-8 justify-center items-center text-slate-400">
         <BsLinkedin className="transition hover:text-emerald-600 cursor-pointer" />
-        <BsGithub />
-        <BsTwitter />
-        <BsMedium />
+        <BsGithub className="transition hover:text-emerald-600 cursor-pointer" />
+        <BsTwitter className="transition hover:text-emerald-600 cursor-pointer" />
+        <BsMedium className="transition hover:text-emerald-600 cursor-pointer" />
       </div>
       <p className="mt-6 text-center">
         I&apos;m always open to discussing software engineering work or
