@@ -14,6 +14,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const AwardsAndCertificates = () => {
   // Hardcoded certification data for demonstration
@@ -69,40 +70,6 @@ const AwardsAndCertificates = () => {
           </div>
         ))}
       </div>
-    </div>
-  );
-};
-
-const Contact = () => {
-  return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold text-center">
-        Let&apos;s work together
-      </h1>
-      <div className="mt-6 flex text-3xl space-x-8 justify-center items-center text-slate-400">
-        <BsLinkedin className="transition hover:text-emerald-600 cursor-pointer" />
-        <BsGithub />
-        <BsTwitter />
-        <BsMedium />
-      </div>
-      <p className="mt-6 text-center">
-        I&apos;m always open to discussing software engineering work or
-        partnership opportunities
-      </p>
-      <Link href="https://cal.com/cedricquitor/" target="_blank">
-        <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
-          Schedule a call
-        </Button>
-      </Link>
-      <p className="text-gray-400 text-center mt-2">
-        or{" "}
-        <Link href="https://www.linkedin.com/in/cedricquitor/" target="_blank">
-          <span className="font-bold transition hover:text-emerald-600">
-            connect
-          </span>
-        </Link>{" "}
-        with me instead
-      </p>
     </div>
   );
 };
