@@ -19,6 +19,8 @@ import ProjectItem from "../components/ProjectItem";
 import { dorav4 } from "../public/images/project";
 import { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { BsLinkedin, BsGithub, BsTwitter, BsMedium } from "react-icons/bs";
+import { mock_grad_pic } from "../public/images/about";
 
 const Hero = () => {
   return (
@@ -45,11 +47,16 @@ const Hero = () => {
             I specialize in developing end-to-end products.
           </p>
         </div>
-        <Link href="https://www.linkedin.com/in/cedricquitor/" target="_blank">
-          <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-xl mx-auto mt-6">
-            Connect with me
-          </Button>
-        </Link>
+        <div className="mt-6">
+          <Link
+            href="https://www.linkedin.com/in/cedricquitor/"
+            target="_blank"
+          >
+            <Button className="transition duration-500 hover:-translate-y-2 hover:shadow-2xl mx-auto">
+              Connect with me
+            </Button>
+          </Link>
+        </div>
       </div>
       {/* Grid 2 - Right
             <div className="order-1 md:order-2">3D Model Here</div> */}
@@ -59,30 +66,46 @@ const Hero = () => {
 
 const About = () => {
   return (
-    <div className="mt-8">
-      {/* About Me */}
+    <div>
       <h1 className="font-bold text-3xl">About</h1>
-      <p className="mt-4">
-        Hello! I&apos;m Cedric Quitor, a Software Engineer based in Manila,
-        Philippines🇵🇭. I recently graduated with a{" "}
-        <span>Bachelor of Science degree in Information Technology</span> from
-        the prestigious <span>University of Santo Tomas</span>. Currently, I am
-        focused on pursuing a career in Software Engineering and have a keen
-        interest in transitioning to the field of Machine Learning Engineering
-        in the future. My passion lies in{" "}
-        <span>full-stack development of web applications</span> and exploring
-        the world of AI/ML applications.
-      </p>
-      <p className="mt-2">
-        Throughout my academic journey, I have been honored to be included in
-        the <span>Dean&apos;s List on multiple occasions</span>, highlighting my
-        dedication to academic excellence. Additionally, I take great pride in
-        receiving the <span>Top 3 award for the Best Capstone Project</span>,
-        which fuels my curiosity and motivates me to push the boundaries of
-        innovation. I am thrilled by the endless possibilities in the software
-        engineering field and am eager to immerse myself in new experiences,
-        acquire further knowledge, and contribute to groundbreaking projects.
-      </p>
+      <div className="flex gap-8">
+        <div className="flex w-2/6 justify-center items-center">
+          <Image
+            src={mock_grad_pic}
+            alt="Cedric's Graduation Picture"
+            className="h-[65%] object-cover object-top rounded-full"
+          />
+        </div>
+        <div className="w-4/6 flex flex-col justify-center">
+          {/* About Me */}
+          <p className="">
+            Hello! I&apos;m Cedric Quitor, a Software Engineer based in Manila,
+            Philippines🇵🇭. I recently graduated with a{" "}
+            <span>Bachelor of Science degree in Information Technology</span>{" "}
+            from the prestigious <span>University of Santo Tomas</span>.
+            Currently, I am focused on pursuing a career in Software Engineering
+            and have a keen interest in transitioning to the field of Machine
+            Learning Engineering in the future. My passion lies in{" "}
+            <span>full-stack development of web applications</span> and
+            exploring the world of AI/ML applications.
+          </p>
+          <p className="mt-2">
+            Throughout my academic journey, I have been honored to be included
+            in the <span>Dean&apos;s List on multiple occasions</span>,
+            highlighting my dedication to academic excellence. Additionally, I
+            take great pride in receiving the{" "}
+            <span>Top 3 award for the Best Capstone Project</span>, which fuels
+            my curiosity and motivates me to push the boundaries of innovation.
+            I am thrilled by the endless possibilities in the software
+            engineering field and am eager to immerse myself in new experiences,
+            acquire further knowledge, and contribute to groundbreaking
+            projects.
+          </p>
+          <Button className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+            View Resume
+          </Button>
+        </div>
+      </div>
     </div>
   );
 };
@@ -347,10 +370,16 @@ const AwardsAndCertificates = () => {
 const Contact = () => {
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6 text-center">
+      <h1 className="text-3xl font-bold text-center">
         Let&apos;s work together
       </h1>
-      <p className="text-center">
+      <div className="mt-6 flex text-3xl space-x-8 justify-center items-center text-slate-400">
+        <BsLinkedin className="transition hover:text-emerald-600 cursor-pointer" />
+        <BsGithub />
+        <BsTwitter />
+        <BsMedium />
+      </div>
+      <p className="mt-6 text-center">
         I&apos;m always open to discussing software engineering work or
         partnership opportunities
       </p>
@@ -362,34 +391,12 @@ const Contact = () => {
       <p className="text-gray-400 text-center mt-2">
         or{" "}
         <Link href="https://www.linkedin.com/in/cedricquitor/" target="_blank">
-          <span className="font-bold">connect</span>
+          <span className="font-bold transition hover:text-emerald-600">
+            connect
+          </span>
         </Link>{" "}
         with me instead
       </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Contact Information</h3>
-          <p>Email: cedricjohn.quitor.cics@ust.edu.ph</p>
-          <p>Phone: +63 (916) 597 5656</p>
-          <p>Location: Manila, Philippines</p>
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Social Media</h3>
-          <p>
-            LinkedIn:{" "}
-            <a href="https://linkedin.com/in/cedricquitor">
-              linkedin.com/in/cedricquitor
-            </a>
-          </p>
-          <p>
-            GitHub:{" "}
-            <a href="https://github.com/cedricquitor">
-              github.com/cedricquitor
-            </a>
-          </p>
-        </div>
-      </div>
     </div>
   );
 };
@@ -405,9 +412,9 @@ export default function Home() {
         <hr className="my-8" />
         <Skills />
         <hr className="my-8" />
-        <Projects />
-        <hr className="my-8" />
         <Experience />
+        <hr className="my-8" />
+        <Projects />
         <hr className="my-8" />
         <AwardsAndCertificates />
         <hr className="my-8" />
