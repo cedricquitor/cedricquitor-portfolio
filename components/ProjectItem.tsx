@@ -13,8 +13,10 @@ interface ProjectItemProps {
   image: StaticImageData;
   tags: string[];
   description: string;
+  award?: string;
   projectLink?: string;
   githubLink?: string;
+  mediumLink?: string;
 }
 
 const TagItem = (props: TagItemProps) => {
@@ -27,7 +29,16 @@ const TagItem = (props: TagItemProps) => {
 };
 
 const ProjectItem = (props: ProjectItemProps) => {
-  const { title, image, tags, description, projectLink, githubLink } = props;
+  const {
+    title,
+    image,
+    tags,
+    description,
+    award,
+    projectLink,
+    githubLink,
+    mediumLink,
+  } = props;
   return (
     <div className="grid grid-cols-12 space-x-4 rounded-md">
       {/* Left Side */}
@@ -50,6 +61,7 @@ const ProjectItem = (props: ProjectItemProps) => {
           })}
         </div>
         <p className="mt-4 text-sm text-gray-500">{description}</p>
+        {award && <p className="mt-2 text-sm text-gray-500">{award}</p>}
         <div className="mt-4 flex space-x-4">
           <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
             <BiLinkExternal className="text-2xl" />

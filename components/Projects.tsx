@@ -8,15 +8,44 @@ const Projects = () => {
     <div className="">
       {/* My Works */}
       <h1 className="font-bold text-3xl">Projects</h1>
-      <div className="mt-4 grid grid-cols-2">
-        <h1>DORA</h1>
-        <h1>imaginkraf</h1>
-      </div>
-      <div className="mt-4">
+      <div className="mt-4 flex flex-col gap-8">
         <ProjectItem
           title="Disaster Online Reporting Application v4"
           image={dorav4}
-          tags={["JavaScript", "ReactJS", "Firebase", "Google Maps API"]}
+          tags={["JavaScript", "React", "Firebase", "Google Maps API", "GCP"]}
+          description={dorav4Desc}
+          award="🥉 This project was awarded Top 3, Best Capstone Award"
+        />
+        <ProjectItem
+          title="Imaginkraf"
+          image={dorav4}
+          tags={[
+            "JavaScript",
+            "React",
+            "Tailwind CSS",
+            "DALL·E 2",
+            "Node.js",
+            "Express",
+            "Cloudinary",
+          ]}
+          description={dorav4Desc}
+        />
+        <ProjectItem
+          title="BOTOmasino"
+          image={dorav4}
+          tags={["TypeScript", "React", "Firebase", "Google Maps API"]}
+          description={dorav4Desc}
+        />
+        <ProjectItem
+          title="Trinkets of Luna Ecommerce"
+          image={dorav4}
+          tags={["JavaScript", "React", "Firebase", "Google Maps API"]}
+          description={dorav4Desc}
+        />
+        <ProjectItem
+          title="cedric.ph"
+          image={dorav4}
+          tags={["TypeScript", "Next.jS", "Tailwind CSS"]}
           description={dorav4Desc}
         />
       </div>
