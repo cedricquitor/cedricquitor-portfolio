@@ -1,4 +1,9 @@
-import { dorav4 } from "../public/images/project";
+import {
+  dorav4,
+  imaginkraf,
+  botomasino,
+  trinkets,
+} from "../public/images/project";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -18,7 +23,7 @@ const Projects = () => {
         />
         <ProjectItem
           title="Imaginkraf"
-          image={dorav4}
+          image={imaginkraf}
           tags={[
             "JavaScript",
             "React",
@@ -32,20 +37,14 @@ const Projects = () => {
         />
         <ProjectItem
           title="BOTOmasino"
-          image={dorav4}
+          image={botomasino}
           tags={["TypeScript", "React", "Firebase", "Google Maps API"]}
           description={dorav4Desc}
         />
         <ProjectItem
           title="Trinkets of Luna Ecommerce"
-          image={dorav4}
+          image={trinkets}
           tags={["JavaScript", "React", "Firebase", "Google Maps API"]}
-          description={dorav4Desc}
-        />
-        <ProjectItem
-          title="cedric.ph"
-          image={dorav4}
-          tags={["TypeScript", "Next.jS", "Tailwind CSS"]}
           description={dorav4Desc}
         />
       </div>
