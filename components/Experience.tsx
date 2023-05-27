@@ -10,9 +10,10 @@ const companies = [
     name: "Symph Co.",
     link: "https://www.symph.co/",
     description: [
-      "Worked on various projects for Company 1.",
-      "Worked on various projects for Company 1.",
-      "Worked on various projects for Company 1.",
+      "Developed and implemented software features following project specifications.",
+      "Collaborated with a team of skilled software developers to deliver high-quality solutions for a client project.",
+      "Communicated effectively with team members and stakeholders to ensure project requirements were met.",
+      "Part of the AI research team that was tasked to discover Large Language Model (LLM) use cases.",
     ],
   },
   {
@@ -22,7 +23,7 @@ const companies = [
     name: "Omdena",
     link: "https://omdena.com/",
     description: [
-      "Developed and maintained web applications using React and Node.js.",
+      "Collaborated with partner UN Habitat to map urban vulnerability areas in the Philippines using open source data",
       "Implemented various features and improvements to existing applications.",
       "Collaborated with team members to meet project requirements and deadlines.",
     ],
@@ -89,9 +90,13 @@ const Experience = () => {
           <ul className="mt-2">
             {activeCompany.description.map((description, key) => {
               return (
-                <div key={key} className="flex items-center space-x-2">
-                  <MdKeyboardArrowRight className="text-emerald-600 text-xl" />
-                  <li>{description}</li>
+                <div key={key} className="flex items-center gap-4 mt-2">
+                  <MdKeyboardArrowRight
+                    className="text-emerald-600 text-xl"
+                    height={32}
+                    width={32}
+                  />
+                  <li className="text-lg text-left w-full">{description}</li>
                 </div>
               );
             })}
