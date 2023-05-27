@@ -42,12 +42,13 @@ const ProjectItem = (props: ProjectItemProps) => {
   return (
     <div className="grid grid-cols-12 space-x-4 rounded-md">
       {/* Left Side */}
-      <div className="col-span-4 flex bg-red-100">
+      <div className="col-span-4">
         <Image
           src={image}
           alt="Project Item Image"
-          height={320}
-          className="border-2 border-gray-100 rounded-lg group-hover:border-gray-300"
+          height={500}
+          width={500}
+          className="border-2 border-gray-100 rounded-lg group-hover:border-gray-300 object-cover object-center w-full h-full"
         />
       </div>
       {/* Right Side */}
