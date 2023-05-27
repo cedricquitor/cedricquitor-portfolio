@@ -42,7 +42,19 @@ const Navbar: React.FC = () => {
             href="#"
             className="transition duration-500 hover:text-[#125ba6]"
           >
-            Blog
+            Skills
+          </Link>
+          <Link
+            href="#"
+            className="transition duration-500 hover:text-blue-900"
+          >
+            Experience
+          </Link>
+          <Link
+            href="#"
+            className="transition duration-500 hover:text-blue-900"
+          >
+            Projects
           </Link>
           <Link
             href="#"
