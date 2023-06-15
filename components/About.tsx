@@ -1,6 +1,11 @@
 import Image from "next/image";
 import { mock_grad_pic } from "../public/images/about";
 import Button from "./Button/Button";
+import { resume } from "../public/assets";
+
+const handleViewResume = () => {
+  window.open(resume, "_blank");
+};
 
 const About = () => {
   return (
@@ -39,7 +44,10 @@ const About = () => {
             acquire further knowledge, and contribute to groundbreaking
             projects.
           </p>
-          <Button className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+          <Button
+            onClick={handleViewResume}
+            className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+          >
             View Resume
           </Button>
         </div>
