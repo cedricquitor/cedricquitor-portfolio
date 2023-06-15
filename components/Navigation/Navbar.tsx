@@ -2,9 +2,11 @@
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import NavigationItem from "./NavigationItem";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     window.scrollY > 0 ? setIsScrolled(true) : setIsScrolled(false);
@@ -16,6 +18,14 @@ const Navbar: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const navigationLinks = [
+    { title: "About", url: "about", offset: -260 },
+    { title: "Skills", url: "skills", offset: -240 },
+    { title: "Experience", url: "experience", offset: -290 },
+    { title: "Projects", url: "projects", offset: -130 },
+    { title: "Contact", url: "contact" },
+  ];
 
   return (
     <nav
@@ -42,55 +52,15 @@ const Navbar: React.FC = () => {
             isScrolled ? "text-base" : "text-xl"
           }`}
         >
-          <Link
-            to="about"
-            className="transition duration-300 cursor-pointer hover:text-emerald-600"
-            smooth={true}
-            duration={800}
-            offset={-260}
-            spy={true}
-          >
-            About
-          </Link>
-          <Link
-            to="skills"
-            className="transition duration-300 cursor-pointer hover:text-emerald-600"
-            smooth={true}
-            duration={800}
-            offset={-240}
-            spy={true}
-          >
-            Skills
-          </Link>
-          <Link
-            to="experience"
-            className="transition duration-300 cursor-pointer hover:text-emerald-600"
-            smooth={true}
-            duration={800}
-            offset={-290}
-            spy={true}
-          >
-            Experience
-          </Link>
-          <Link
-            to="projects"
-            className="transition duration-300 cursor-pointer hover:text-emerald-600"
-            smooth={true}
-            duration={800}
-            offset={-130}
-            spy={true}
-          >
-            Projects
-          </Link>
-          <Link
-            to="contact"
-            className="transition duration-300 cursor-pointer hover:text-emerald-600"
-            smooth={true}
-            duration={800}
-            spy={true}
-          >
-            Contact
-          </Link>
+          {navigationLinks.map((navigationLink) => (
+            <NavigationItem
+              key={navigationLink.title}
+              title={navigationLink.title}
+              url={navigationLink.url}
+              offset={navigationLink.offset}
+              className={`transition duration-300 cursor-pointer hover:text-emerald-600`}
+            />
+          ))}
         </ul>
       </div>
       {/* Links in Small Screen */}
