@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="text-center flex flex-col gap-y-8">
         {/* Image Here (Your emoji) */}
         <div className="flex flex-col items-center gap-y-6">
-          <div className="h-32 w-32 bg-[#37b47e] rounded-full flex justify-center items-center">
+          <div className="h-32 w-32 bg-emerald-500 rounded-full flex justify-center items-center">
             <Image src={memoji} alt="Cedric's Memoji" className="h-32 w-auto" />
           </div>
           <h2 className="font-bold text-xl md:text-2xl">
