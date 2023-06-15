@@ -62,7 +62,7 @@ const Experience = () => {
                     activeCompany.id === company.id
                       ? "bg-emerald-50 text-emerald-600 border-l-green-600"
                       : "border-l-gray-300"
-                  } border-l-2 transition-all duration-500 w-full p-2 text-left`}
+                  } border-l-2 transition-all duration-500 w-full p-2 text-left text-sm md:text-base`}
                   onClick={() => handleClick(company)}
                 >
                   {company.name}
@@ -73,7 +73,7 @@ const Experience = () => {
         </div>
         {/* Right Side */}
         <div className="w-3/4 p-4">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-xl md:text-2xl font-bold">
             {activeCompany?.role}{" "}
             <span className="text-gray-600">
               @{" "}
@@ -86,7 +86,9 @@ const Experience = () => {
               </Link>
             </span>
           </h2>
-          <p className="text-gray-400">{activeCompany?.duration}</p>
+          <p className="text-gray-400 text-sm md:text-base">
+            {activeCompany?.duration}
+          </p>
           <ul className="mt-2">
             {activeCompany.description.map((description, key) => {
               return (
@@ -96,7 +98,9 @@ const Experience = () => {
                     height={32}
                     width={32}
                   />
-                  <li className="text-lg text-left w-full">{description}</li>
+                  <li className="text-base md:text-lg text-left w-full">
+                    {description}
+                  </li>
                 </div>
               );
             })}

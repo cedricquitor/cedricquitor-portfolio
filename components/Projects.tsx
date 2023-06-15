@@ -13,7 +13,7 @@ const Projects = () => {
     <div className="">
       {/* My Works */}
       <h1 className="font-bold text-3xl">Projects</h1>
-      <div className="mt-4 flex flex-col gap-8">
+      <div className="mt-4 gap-24 flex flex-col md:gap-8">
         <ProjectItem
           title="Disaster Online Reporting Application v4"
           image={dorav4}

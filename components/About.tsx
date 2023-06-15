@@ -7,14 +7,14 @@ const About = () => {
     <div>
       <h1 className="font-bold text-3xl">About</h1>
       <div className="flex gap-8 mt-4">
-        <div className="flex w-2/6 justify-center">
+        <div className="hidden md:flex w-2/6 justify-center">
           <Image
             src={mock_grad_pic}
             alt="Cedric's Graduation Picture"
             className="h-[65%] object-cover object-top rounded-full"
           />
         </div>
-        <div className="w-4/6 flex flex-col">
+        <div className="w-full md:w-4/6 flex flex-col">
           {/* About Me */}
           <p className="">
             Hello! I&apos;m Cedric Quitor, a Software Engineer based in Manila,

@@ -14,9 +14,11 @@ const Hero = () => {
           <div className="h-32 w-32 bg-[#37b47e] rounded-full flex justify-center items-center">
             <Image src={memoji} alt="Cedric's Memoji" className="h-32 w-auto" />
           </div>
-          <h2 className="font-bold text-2xl">Hi, I&apos;m Cedric👋</h2>
+          <h2 className="font-bold text-xl md:text-2xl">
+            Hi, I&apos;m Cedric👋
+          </h2>
         </div>
-        <h1 className="text-7xl font-bold">
+        <h1 className="text-6xl md:text-7xl font-bold">
           Building{" "}
           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-500">
             web
@@ -28,14 +30,14 @@ const Hero = () => {
           applications
         </h1>
         <div className="mt-2">
-          <p className="text-2xl">
+          <p className="text-xl md:text-2xl">
             a{" "}
             <span className="font-bold text-emerald-500">
               Software Engineer
             </span>{" "}
             based in Manila, PH🇵🇭.
           </p>
-          <p className="text-2xl">
+          <p className="text-xl md:text-2xl">
             I specialize in developing end-to-end products.
           </p>
         </div>
