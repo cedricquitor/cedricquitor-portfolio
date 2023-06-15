@@ -13,7 +13,7 @@ const socialLinks = {
 
 const Contact = () => {
   return (
-    <div>
+    <section id="contact">
       <h1 className="font-bold text-3xl">Contact</h1>
       <div className="container mx-auto py-8">
         <h1 className="text-3xl font-bold text-center">
@@ -58,7 +58,7 @@ const Contact = () => {
           with me instead
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

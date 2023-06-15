@@ -49,7 +49,7 @@ const Experience = () => {
   };
 
   return (
-    <div>
+    <section id="experience">
       <h1 className="font-bold text-3xl">Experience</h1>
       <div className="flex flex-row">
         {/* Left Side */}
@@ -107,7 +107,7 @@ const Experience = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Experience;

@@ -8,7 +8,7 @@ const About = () => {
   };
 
   return (
-    <div>
+    <section id="about">
       <h1 className="font-bold text-3xl">About</h1>
       <div className="flex gap-8 mt-4">
         <div className="hidden md:flex w-2/6 justify-center">
@@ -51,7 +51,7 @@ const About = () => {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -50,7 +50,7 @@ const Skills = () => {
   ];
 
   return (
-    <section>
+    <section id="skills">
       {/* What I do and Tech Stack */}
       <h1 className="font-bold text-3xl">Skills</h1>
       <div className="mt-4 space-y-8">
