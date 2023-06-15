@@ -2,7 +2,17 @@
 const nextConfig = {
   experimental: {
     appDir: true,
-    fontLoaders: [{ loader: "@next/font/google", options: { subsets: ["latin"] } }],
+    fontLoaders: [
+      { loader: "@next/font/google", options: { subsets: ["latin"] } },
+    ],
+  },
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.pdf$/i,
+      type: "asset/source",
+    });
+
+    return config;
   },
 };
 
