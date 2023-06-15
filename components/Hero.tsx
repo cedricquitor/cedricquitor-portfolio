@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button/Button";
-import memoji from "../public/images/memoji.png";
+import { memoji } from "../public/images/hero";
 
 const Hero = () => {
   return (
