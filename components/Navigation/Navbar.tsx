@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
               title={navigationLink.title}
               url={navigationLink.url}
               offset={navigationLink.offset}
-              className={`transition duration-300 cursor-pointer hover:text-emerald-600`}
+              className={`transition duration-300 cursor-pointer hover:text-emerald-500`}
             />
           ))}
         </ul>

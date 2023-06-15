@@ -20,7 +20,7 @@ const NavigationItem = (props: NavigationItemProps) => {
       offset={offset ? offset : 0}
       spy={true}
       className={`${className} ${
-        isLinkActive ? "text-blue-600" : "text-black"
+        isLinkActive ? "text-emerald-600" : "text-black"
       }`}
       onSetActive={() => setIsLinkActive(true)}
       onSetInactive={() => setIsLinkActive(false)}
