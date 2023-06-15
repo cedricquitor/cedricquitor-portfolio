@@ -11,7 +11,7 @@ const About = () => {
           <Image
             src={mock_grad_pic}
             alt="Cedric's Graduation Picture"
-            className="h-[65%] object-cover object-top rounded-full"
+            className="h-fit object-cover object-top rounded-full"
           />
         </div>
         <div className="w-full md:w-4/6 flex flex-col">

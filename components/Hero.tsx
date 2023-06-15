@@ -18,7 +18,7 @@ const Hero = () => {
             Hi, I&apos;m Cedric👋
           </h2>
         </div>
-        <h1 className="text-6xl md:text-7xl font-bold">
+        <h1 className="text-5xl md:text-7xl font-bold">
           Building{" "}
           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-emerald-500">
             web
