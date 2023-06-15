@@ -3,6 +3,10 @@ import { mock_grad_pic } from "../public/images/about";
 import Button from "./Button/Button";
 
 const About = () => {
+  const handleViewResumeClick = () => {
+    window.open("/assets/resume.pdf", "_blank");
+  };
+
   return (
     <div>
       <h1 className="font-bold text-3xl">About</h1>
@@ -39,7 +43,10 @@ const About = () => {
             acquire further knowledge, and contribute to groundbreaking
             projects.
           </p>
-          <Button className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+          <Button
+            onClick={handleViewResumeClick}
+            className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+          >
             View Resume
           </Button>
         </div>
