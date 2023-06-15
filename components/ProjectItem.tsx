@@ -69,27 +69,35 @@ const ProjectItem = (props: ProjectItemProps) => {
           <p className="mt-2 text-sm md:text-base text-gray-500">{award}</p>
         )}
         <div className="mt-4 flex space-x-4">
-          <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
-            <BiLinkExternal className="text-2xl" />
-          </Button>
-          <Button
-            type="secondary"
-            className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-          >
-            <BsGithub className="text-2xl" />
-          </Button>
-          <Button
-            type="secondary"
-            className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-          >
-            <BsMedium className="text-2xl" />
-          </Button>
-          <Button
-            type="secondary"
-            className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-          >
-            <FaKaggle className="text-2xl" />
-          </Button>
+          {projectLink && (
+            <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+              <BiLinkExternal className="text-2xl" />
+            </Button>
+          )}
+          {githubLink && (
+            <Button
+              type="secondary"
+              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+            >
+              <BsGithub className="text-2xl" />
+            </Button>
+          )}
+          {mediumLink && (
+            <Button
+              type="secondary"
+              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+            >
+              <BsMedium className="text-2xl" />
+            </Button>
+          )}
+          {kaggleLink && (
+            <Button
+              type="secondary"
+              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+            >
+              <FaKaggle className="text-2xl" />
+            </Button>
+          )}
         </div>
       </div>
     </div>
