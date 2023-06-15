@@ -17,7 +17,15 @@ const Projects = () => {
         <ProjectItem
           title="Disaster Online Reporting Application v4"
           image={dorav4}
-          tags={["JavaScript", "React", "Firebase", "Google Maps API", "GCP"]}
+          tags={[
+            "JavaScript",
+            "React",
+            "Firebase",
+            "Google Maps API",
+            "GCP",
+            "Android",
+            "Java",
+          ]}
           description={dorav4Desc}
           award="🥉 This project was awarded Top 3, Best Capstone Award"
         />
@@ -38,13 +46,28 @@ const Projects = () => {
         <ProjectItem
           title="BOTOmasino"
           image={botomasino}
-          tags={["TypeScript", "React", "Firebase", "Google Maps API"]}
+          tags={[
+            "TypeScript",
+            "React",
+            "Firebase",
+            "Google Maps API",
+            "Polygon",
+            "Solidity",
+            "Hardhat",
+          ]}
           description={dorav4Desc}
         />
         <ProjectItem
           title="Trinkets of Luna Ecommerce"
           image={trinkets}
-          tags={["JavaScript", "React", "Firebase", "Google Maps API"]}
+          tags={[
+            "JavaScript",
+            "React",
+            "Firebase",
+            "Redux",
+            "Tailwind CSS",
+            "PayMongo",
+          ]}
           description={dorav4Desc}
         />
       </div>
