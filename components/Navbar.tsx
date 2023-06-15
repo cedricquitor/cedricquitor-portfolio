@@ -35,30 +35,33 @@ const Navbar: React.FC = () => {
             isScrolled ? "text-base" : "text-xl"
           }`}
         >
-          <Link href="#" className="transition duration-500 hover:text-sky-600">
+          <Link
+            href="#"
+            className="transition duration-300 hover:text-emerald-600"
+          >
             About
           </Link>
           <Link
             href="#"
-            className="transition duration-500 hover:text-[#125ba6]"
+            className="transition duration-300 hover:text-emerald-600"
           >
             Skills
           </Link>
           <Link
             href="#"
-            className="transition duration-500 hover:text-blue-900"
+            className="transition duration-300 hover:text-emerald-600"
           >
             Experience
           </Link>
           <Link
             href="#"
-            className="transition duration-500 hover:text-blue-900"
+            className="transition duration-300 hover:text-emerald-600"
           >
             Projects
           </Link>
           <Link
             href="#"
-            className="transition duration-500 hover:text-blue-900"
+            className="transition duration-300 hover:text-emerald-600"
           >
             Contact
           </Link>
