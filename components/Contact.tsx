@@ -3,6 +3,14 @@ import { BsGithub, BsLinkedin, BsMedium, BsTwitter } from "react-icons/bs";
 import Button from "./Button/Button";
 import { FaKaggle } from "react-icons/fa";
 
+const socialLinks = {
+  linkedin: "https://www.linkedin.com/in/cedricquitor/",
+  github: "https://github.com/cedricquitor",
+  kaggle: "https://www.kaggle.com/cedricquitor",
+  twitter: "https://twitter.com/cedricquitor",
+  medium: "https://medium.com/@cedricquitor",
+};
+
 const Contact = () => {
   return (
     <div>
@@ -12,11 +20,21 @@ const Contact = () => {
           Let&apos;s work together
         </h1>
         <div className="mt-6 flex text-3xl space-x-8 justify-center items-center text-slate-400">
-          <BsLinkedin className="transition hover:text-emerald-600 cursor-pointer" />
-          <BsGithub className="transition hover:text-emerald-600 cursor-pointer" />
-          <BsTwitter className="transition hover:text-emerald-600 cursor-pointer" />
-          <BsMedium className="transition hover:text-emerald-600 cursor-pointer" />
-          <FaKaggle className="transition hover:text-emerald-600 cursor-pointer" />
+          <Link href={socialLinks.linkedin} target="_blank">
+            <BsLinkedin className="transition hover:text-emerald-600 cursor-pointer" />
+          </Link>
+          <Link href={socialLinks.github} target="_blank">
+            <BsGithub className="transition hover:text-emerald-600 cursor-pointer" />
+          </Link>
+          <Link href={socialLinks.kaggle} target="_blank">
+            <FaKaggle className="transition hover:text-emerald-600 cursor-pointer" />
+          </Link>
+          <Link href={socialLinks.twitter} target="_blank">
+            <BsTwitter className="transition hover:text-emerald-600 cursor-pointer" />
+          </Link>
+          <Link href={socialLinks.medium} target="_blank">
+            <BsMedium className="transition hover:text-emerald-600 cursor-pointer" />
+          </Link>
         </div>
         <p className="mt-6 text-center">
           I&apos;m always open to discussing software engineering work or
