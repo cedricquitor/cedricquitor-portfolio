@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -24,11 +24,18 @@ const Navbar: React.FC = () => {
       }`}
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-x-8">
+      <Link
+        to="hero"
+        className="flex items-center gap-x-8 cursor-pointer"
+        smooth={true}
+        duration={800}
+        offset={-120}
+        spy={true}
+      >
         <p className="font-bold text-2xl">C</p>
         <div className="font-bold text-xl">hi@cedric.ph</div>
       </Link>
-      {/* Links */}
+      {/* Links in Medium Screen Above */}
       <div className="hidden md:flex">
         <ul
           className={`flex gap-8 font-bold my-auto ${
@@ -36,37 +43,57 @@ const Navbar: React.FC = () => {
           }`}
         >
           <Link
-            href="#"
-            className="transition duration-300 hover:text-emerald-600"
+            to="about"
+            className="transition duration-300 cursor-pointer hover:text-emerald-600"
+            smooth={true}
+            duration={800}
+            offset={-260}
+            spy={true}
           >
             About
           </Link>
           <Link
-            href="#"
-            className="transition duration-300 hover:text-emerald-600"
+            to="skills"
+            className="transition duration-300 cursor-pointer hover:text-emerald-600"
+            smooth={true}
+            duration={800}
+            offset={-240}
+            spy={true}
           >
             Skills
           </Link>
           <Link
-            href="#"
-            className="transition duration-300 hover:text-emerald-600"
+            to="experience"
+            className="transition duration-300 cursor-pointer hover:text-emerald-600"
+            smooth={true}
+            duration={800}
+            offset={-290}
+            spy={true}
           >
             Experience
           </Link>
           <Link
-            href="#"
-            className="transition duration-300 hover:text-emerald-600"
+            to="projects"
+            className="transition duration-300 cursor-pointer hover:text-emerald-600"
+            smooth={true}
+            duration={800}
+            offset={-130}
+            spy={true}
           >
             Projects
           </Link>
           <Link
-            href="#"
-            className="transition duration-300 hover:text-emerald-600"
+            to="contact"
+            className="transition duration-300 cursor-pointer hover:text-emerald-600"
+            smooth={true}
+            duration={800}
+            spy={true}
           >
             Contact
           </Link>
         </ul>
       </div>
+      {/* Links in Small Screen */}
       <div className="flex md:hidden justify-center items-center">
         <GiHamburgerMenu />
       </div>
