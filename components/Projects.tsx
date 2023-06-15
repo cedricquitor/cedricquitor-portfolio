@@ -28,6 +28,7 @@ const Projects = () => {
           ]}
           description={dorav4Desc}
           award="🥉 This project was awarded Top 3, Best Capstone Award"
+          githubLink="https://github.com/cedricquitor/disaster-online-reporting-application-v4-web-app"
         />
         <ProjectItem
           title="Imaginkraf"
@@ -42,6 +43,8 @@ const Projects = () => {
             "Cloudinary",
           ]}
           description={dorav4Desc}
+          projectLink="https://imaginkraf-web-app.vercel.app/"
+          githubLink="https://github.com/cedricquitor/imaginkraf-web-app"
         />
         <ProjectItem
           title="BOTOmasino"
@@ -56,6 +59,7 @@ const Projects = () => {
             "Hardhat",
           ]}
           description={dorav4Desc}
+          githubLink="https://github.com/cedricquitor/blockchain-web-app"
         />
         <ProjectItem
           title="Trinkets of Luna Ecommerce"
@@ -69,6 +73,8 @@ const Projects = () => {
             "PayMongo",
           ]}
           description={dorav4Desc}
+          projectLink="https://trinketsofluna-ecommerce-fbase.firebaseapp.com/"
+          githubLink="https://github.com/cedricquitor/trinketsofluna-ecommerce-web-app"
         />
       </div>
     </section>

@@ -1,9 +1,9 @@
 import Image, { StaticImageData } from "next/image";
-import { dorav4 } from "../public/images/project";
 import { BsGithub, BsMedium } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import { FaKaggle } from "react-icons/fa";
 import Button from "./Button/Button";
+import Link from "next/link";
 
 interface TagItemProps {
   tag: string;
@@ -70,33 +70,41 @@ const ProjectItem = (props: ProjectItemProps) => {
         )}
         <div className="mt-4 flex space-x-4">
           {projectLink && (
-            <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
-              <BiLinkExternal className="text-2xl" />
-            </Button>
+            <Link href={projectLink} target="_blank">
+              <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+                <BiLinkExternal className="text-2xl" />
+              </Button>
+            </Link>
           )}
           {githubLink && (
-            <Button
-              type="secondary"
-              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-            >
-              <BsGithub className="text-2xl" />
-            </Button>
+            <Link href={githubLink} target="_blank">
+              <Button
+                type="secondary"
+                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+              >
+                <BsGithub className="text-2xl" />
+              </Button>
+            </Link>
           )}
           {mediumLink && (
-            <Button
-              type="secondary"
-              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-            >
-              <BsMedium className="text-2xl" />
-            </Button>
+            <Link href={mediumLink} target="_blank">
+              <Button
+                type="secondary"
+                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+              >
+                <BsMedium className="text-2xl" />
+              </Button>
+            </Link>
           )}
           {kaggleLink && (
-            <Button
-              type="secondary"
-              className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
-            >
-              <FaKaggle className="text-2xl" />
-            </Button>
+            <Link href={kaggleLink} target="_blank">
+              <Button
+                type="secondary"
+                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+              >
+                <FaKaggle className="text-2xl" />
+              </Button>
+            </Link>
           )}
         </div>
       </div>
