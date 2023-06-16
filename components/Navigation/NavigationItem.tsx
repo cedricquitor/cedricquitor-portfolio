@@ -6,12 +6,13 @@ interface NavigationItemProps {
   url: string;
   offset?: number;
   className?: string;
+  onClick?: () => void;
 }
 
 const NavigationItem = (props: NavigationItemProps) => {
   const [isLinkActive, setIsLinkActive] = useState(false);
 
-  const { title, url, offset, className } = props;
+  const { title, url, offset, className, onClick } = props;
   return (
     <Link
       to={url}
@@ -22,6 +23,7 @@ const NavigationItem = (props: NavigationItemProps) => {
       className={`${className} ${
         isLinkActive ? "text-emerald-600" : "text-black"
       }`}
+      onClick={onClick}
       onSetActive={() => setIsLinkActive(true)}
       onSetInactive={() => setIsLinkActive(false)}
     >

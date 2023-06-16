@@ -4,7 +4,7 @@ type Props = {
   children: ReactNode | string;
   className?: string;
   type?: "primary" | "secondary";
-  onClick?: () => void; // Add the onClick prop
+  onClick?: () => void;
 };
 
 const Button = ({ children, className, type, onClick }: Props) => {
