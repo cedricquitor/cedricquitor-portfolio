@@ -19,15 +19,19 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-  const handleMobileScroll = () => {
-    setIsMenuOpen(false);
-  };
-
-  const handleMobileClick = () => {
-    setIsMenuOpen(false);
-  };
-
   useEffect(() => {
+    const handleMobileScroll = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleMobileClick = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
     document.addEventListener("click", handleMobileClick);
     document.addEventListener("scroll", handleMobileScroll);
 
@@ -35,7 +39,7 @@ const Navbar: React.FC = () => {
       document.removeEventListener("click", handleMobileClick);
       document.removeEventListener("scroll", handleMobileScroll);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   const navigationLinks = [
     { title: "About", url: "about", offset: -260 },
