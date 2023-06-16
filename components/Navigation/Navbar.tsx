@@ -1,7 +1,7 @@
 "use client";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GrClose, GrMenu } from "react-icons/gr";
 import NavigationItem from "./NavigationItem";
 
 const Navbar: React.FC = () => {
@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed z-50 w-full top-0 flex justify-between py-8 px-8 md:px-16 transition-all duration-300 ${
-        isScrolled ? "backdrop-filter backdrop-blur-lg shadow-md py-8" : ""
+        isScrolled ? "backdrop-filter backdrop-blur-lg shadow-md py-8" : null
       }`}
     >
       {/* Logo */}
@@ -52,9 +52,9 @@ const Navbar: React.FC = () => {
             isScrolled ? "text-base" : "text-xl"
           }`}
         >
-          {navigationLinks.map((navigationLink) => (
+          {navigationLinks.map((navigationLink, index) => (
             <NavigationItem
-              key={navigationLink.title}
+              key={index}
               title={navigationLink.title}
               url={navigationLink.url}
               offset={navigationLink.offset}
@@ -64,9 +64,28 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       {/* Links in Small Screen */}
-      <div className="flex md:hidden justify-center items-center">
-        <GiHamburgerMenu />
+      <div
+        className="flex md:hidden justify-center items-center cursor-pointer"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+      >
+        {isMenuOpen ? <GrClose /> : <GrMenu />}
       </div>
+      {isMenuOpen && (
+        <div className="absolute flex items-center justify-center right-8 top-16 bg-emerald-500 rounded-md transition-all duration-300 md:hidden ">
+          <div className="flex flex-col">
+            {navigationLinks.map((navigationLink, index) => (
+              <NavigationItem
+                key={index}
+                title={navigationLink.title}
+                url={navigationLink.url}
+                offset={navigationLink.offset}
+                className="text-white text-center hover:bg-emerald-600 hover:text-white px-12 py-6 rounded-md text-sm font-medium cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
