@@ -8,7 +8,10 @@ export default function Head() {
         name="description"
         content="A portfolio website for Cedric Quitor"
       />
-      <meta property="og:image" content="../public/images/preview.png" />
+      <meta
+        property="og:image"
+        content="https://www.cedricquitor.me/images/preview.png"
+      />
       <link rel="icon" href="/favicon.ico" />
     </>
   );
