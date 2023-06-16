@@ -3,6 +3,7 @@ import {
   imaginkraf,
   botomasino,
   trinkets,
+  boston,
 } from "../public/images/project";
 import ProjectItem from "./ProjectItem";
 
@@ -60,6 +61,22 @@ const Projects = () => {
           ]}
           description={dorav4Desc}
           githubLink="https://github.com/cedricquitor/blockchain-web-app"
+        />
+        <ProjectItem
+          title="Data-Driven Boston: XGBoost Regression for Housing Prices"
+          image={boston}
+          tags={[
+            "Python",
+            "NumPy",
+            "Pandas",
+            "Matplotlib",
+            "Seaborn",
+            "Scikit-learn",
+            "XGBoost",
+            "Regression",
+          ]}
+          description={dorav4Desc}
+          kaggleLink="https://www.kaggle.com/code/cedricquitor/ml-regression-boston-house-price-prediction"
         />
         <ProjectItem
           title="Trinkets of Luna Ecommerce"
