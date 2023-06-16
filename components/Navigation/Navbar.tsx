@@ -19,6 +19,24 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  const handleMobileScroll = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleMobileClick = () => {
+    setIsMenuOpen(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleMobileClick);
+    document.addEventListener("scroll", handleMobileScroll);
+
+    return () => {
+      document.removeEventListener("click", handleMobileClick);
+      document.removeEventListener("scroll", handleMobileScroll);
+    };
+  }, []);
+
   const navigationLinks = [
     { title: "About", url: "about", offset: -260 },
     { title: "Skills", url: "skills", offset: -240 },
