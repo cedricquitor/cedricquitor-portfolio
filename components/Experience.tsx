@@ -61,7 +61,7 @@ const Experience = () => {
                   className={`${
                     activeCompany.id === company.id
                       ? "bg-emerald-50 text-emerald-600 border-l-green-600"
-                      : "border-l-gray-300"
+                      : "border-l-gray-300 hover:bg-gray-100"
                   } border-l-2 transition-all duration-500 w-full p-2 text-left text-sm md:text-base`}
                   onClick={() => handleClick(company)}
                 >
