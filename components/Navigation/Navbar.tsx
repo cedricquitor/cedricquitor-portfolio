@@ -87,10 +87,14 @@ const Navbar: React.FC = () => {
       </div>
       {/* Links in Small Screen */}
       <div
-        className="flex md:hidden justify-center items-center cursor-pointer"
+        className="flex md:hidden justify-center items-center cursor-pointer pl-8 py-2"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? <GrClose /> : <GrMenu />}
+        {isMenuOpen ? (
+          <GrClose className="text-xl" />
+        ) : (
+          <GrMenu className="text-xl" />
+        )}
       </div>
       {isMenuOpen && (
         <div className="absolute flex items-center justify-center right-8 top-16 bg-emerald-500 rounded-md transition-all duration-300 md:hidden ">
