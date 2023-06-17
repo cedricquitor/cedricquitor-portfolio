@@ -45,7 +45,7 @@ const About = () => {
           </p>
           <Button
             onClick={handleViewResumeClick}
-            className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+            className="mt-4 py-2 w-54 text-center transition hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center"
           >
             View Resume
           </Button>
