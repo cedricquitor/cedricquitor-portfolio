@@ -71,7 +71,7 @@ const ProjectItem = (props: ProjectItemProps) => {
         <div className="mt-4 flex space-x-4">
           {projectLink && (
             <Link href={projectLink} target="_blank">
-              <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center">
+              <Button className="py-2 w-54 text-center transition hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center">
                 <BiLinkExternal className="text-2xl" />
               </Button>
             </Link>
@@ -80,7 +80,7 @@ const ProjectItem = (props: ProjectItemProps) => {
             <Link href={githubLink} target="_blank">
               <Button
                 type="secondary"
-                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+                className="py-2 w-54 text-center transition hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center"
               >
                 <BsGithub className="text-2xl" />
               </Button>
@@ -90,7 +90,7 @@ const ProjectItem = (props: ProjectItemProps) => {
             <Link href={mediumLink} target="_blank">
               <Button
                 type="secondary"
-                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+                className="py-2 w-54 text-center transition hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center"
               >
                 <BsMedium className="text-2xl" />
               </Button>
@@ -100,7 +100,7 @@ const ProjectItem = (props: ProjectItemProps) => {
             <Link href={kaggleLink} target="_blank">
               <Button
                 type="secondary"
-                className="py-2 w-54 text-center transition hover:bg-emerald-600 flex items-center justify-center"
+                className="py-2 w-54 text-center transition hover:text-white hover:bg-emerald-600 hover:border-emerald-600 flex items-center justify-center"
               >
                 <FaKaggle className="text-2xl" />
               </Button>
