@@ -10,10 +10,9 @@ const companies = [
     name: "Symph Co.",
     link: "https://www.symph.co/",
     description: [
-      "Developed and implemented software features following project specifications.",
-      "Collaborated with a team of skilled software developers to deliver high-quality solutions for a client project.",
-      "Communicated effectively with team members and stakeholders to ensure project requirements were met.",
-      "Part of the AI research team that was tasked to discover Large Language Model (LLM) use cases.",
+      "Collaborated with a team of 7 to deliver software features, including frontend and backend development, for an Interior Design firm's web app, focusing on enhancing shop filters and resolving bugs.",
+      "Explored Large Language Models (LLMs) use cases as part of the AI research team.",
+      "Engaged in cross-functional project work, actively participating in two teams at Symph Co., one dedicated to an Interior Design firm's project and another focused on AI research.",
     ],
   },
   {
@@ -23,8 +22,8 @@ const companies = [
     name: "Omdena",
     link: "https://omdena.com/",
     description: [
-      "Collaborated with partner UN Habitat to map urban vulnerability areas in the Philippines using open source data",
-      "Implemented various features and improvements to existing applications.",
+      "Collaborated with partner UN Habitat to map urban vulnerability areas in the Philippines using open source data.",
+      "Implemented K-Nearest Neighbor classification algorithm to determine an area's vulnerabilit.",
       "Collaborated with team members to meet project requirements and deadlines.",
     ],
   },
