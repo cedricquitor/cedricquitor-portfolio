@@ -64,13 +64,28 @@ const Navbar: React.FC = () => {
         offset={-120}
         spy={true}
       >
-        <p className="font-bold text-2xl">C</p>
-        <div className="font-bold text-xl">hi@cedric.ph</div>
+        {isScrolled ? (
+          <p
+            className={`font-bold ${
+              isScrolled ? "text-base" : "text-xl"
+            } transition-all duration-500`}
+          >
+            C
+          </p>
+        ) : (
+          <p
+            className={`font-bold ${
+              isScrolled ? "text-base" : "text-xl"
+            } transition-all duration-500`}
+          >
+            cedricquitor.me
+          </p>
+        )}
       </Link>
       {/* Links in Medium Screen Above */}
       <div className="hidden md:flex">
         <ul
-          className={`flex gap-8 font-bold my-auto ${
+          className={`flex gap-8 font-bold my-auto transition-all duration-500 ${
             isScrolled ? "text-base" : "text-xl"
           }`}
         >
@@ -97,7 +112,7 @@ const Navbar: React.FC = () => {
         )}
       </div>
       {isMenuOpen && (
-        <div className="absolute flex items-center justify-center right-8 top-16 bg-emerald-500 rounded-md transition-all duration-300 md:hidden ">
+        <div className="absolute flex items-center justify-center right-8 top-16 bg-emerald-500 rounded-md transition-all duration-300 md:hidden">
           <div className="flex flex-col">
             {navigationLinks.map((navigationLink, index) => (
               <NavigationItem
